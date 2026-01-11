@@ -16,14 +16,23 @@ def scrape_with_selenium():
     # Setup Chrome options
     chrome_options = Options()
     # chrome_options.add_argument("--headless")  # Uncomment for headless mode
+    chrome_options.add_argument("--headless=new")
+    chrome_options.add_argument("--no-sandbox")
+    chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--disable-blink-features=AutomationControlled")
     chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
     chrome_options.add_experimental_option('useAutomationExtension', False)
     
     # Enable logging to capture network activity
     chrome_options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
-    
-    driver = webdriver.Chrome(options=chrome_options)
+
+    try:
+        from webdriver_manager.chrome import ChromeDriverManager
+        service = Service(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+    except ImportError:
+        driver = webdriver.Chrome(options=chrome_options)
     
     try:
         print("Loading page...")
@@ -163,5 +172,6 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
 
