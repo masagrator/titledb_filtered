@@ -75,10 +75,10 @@ os.makedirs("output/titleid")
 os.makedirs("output2/titleid")
 LIST = {}
 LIST_REGIONS = {}
-NSUIDs = {}
+NSUIDs = []
 LIST2 = {}
 LIST2_REGIONS = {}
-NS2UIDs = {}
+NS2UIDs = []
 
 for x in range(len(files)):
 
@@ -205,3 +205,4 @@ new_file.close()
 new_file = open("output2/nsuIDs.json", "w", encoding="UTF-8")
 json.dump(NS2UIDs, new_file, ensure_ascii=False)
 new_file.close()
+
