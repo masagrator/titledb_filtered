@@ -42,7 +42,7 @@ def scrape_with_selenium():
         driver.get("https://store-jp.nintendo.com/item/software/D70010000083295")
         
         # Wait for the API call to be made
-        WebDriverWait(driver, 10).until(
+        WebDriverWait(driver, 30).until(
             lambda driver: driver.execute_script('return document.readyState') == 'complete'
         )
         
@@ -131,7 +131,7 @@ while(i < len(NSUIDs)):
         url = f"{base_url}{product_id}"
         
         # Make the request
-        response = requests.get(url, headers=headers, params=params, timeout=10)
+        response = requests.get(url, headers=headers, params=params, timeout=30)
         
         # Check if the response is successful (HTTP 200)
         if response.status_code == 200:
@@ -175,6 +175,7 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
 
 
