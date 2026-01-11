@@ -4,6 +4,8 @@ import shutil
 import lzma
 import glob
 from pathlib import Path
+import xml.etree.ElementTree as ET
+import requests
 
 files = [
     "US.en",
@@ -150,8 +152,72 @@ for x in range(len(files)):
         json.dump(entry, new_file, indent="\t", ensure_ascii=True)
         new_file.close()
 
+new_file = open("output/nsuIDs.json", "w", encoding="UTF-8")
+json.dump(NSUIDs, new_file, ensure_ascii=False)
+new_file.close()
+new_file = open("output2/nsuIDs.json", "w", encoding="UTF-8")
+json.dump(NS2UIDs, new_file, ensure_ascii=False)
+new_file.close()
+
+# Scrap Japanese eshop
+
+tree = ET.parse('switch.xml')
+root = tree.getroot()
+
+base_url = "https://store-jp.nintendo.com/item/software/D"
+
+NSUIDs.extend(NS2UIDs)
+
+missing_NSUIDs = []
+
+if os.path.isfile("missing_new/NSUIDs.json"):
+    file = open("missing_new/NSUIDs.json", "r", encoding="UTF-8")
+    missing_NSUIDs = json.load(file)
+    NSUIDs.extend(missing_NSUIDs)
+    file.close()
+else: os.makedirs("missing_new", exist_ok=True)
+
+for title in root.findall('TitleInfo'):
+    link = title.find('LinkURL').text
+    
+    nsuID = link.replace("/titles/", "")
+
+    if (nsuID in NSUIDs or nsuID in missing_NSUIDs):
+        continue
+    
+    entry = {}
+    entry["name"] = title.find('TitleName').text
+    entry["publisher"] = title.find('MakerName').text
+    entry["releaseDate"] = title.find('SalesDate').text
+    entry["bannerUrl"] = title.find('ScreenshotImgURL').text
+    entry["iconUrl"] = ""
+    entry["screenshots"] = []
+    entry["size"] = 0
+
+    new_url = base_url + nsuID
+
+    response = requests.get(new_url)
+    if response.status_code == 200:
+        html_source_code = response.text
+        pos = html_source_code.find("c_applicationId\":")
+        if (pos != -1):
+            pos += 18
+            titleid = html_source_code[pos:pos+16]
+            if titleid.startswith("0400"):
+                continue
+            if os.path.isfile("output/titleid/%s.json"):
+                missing_NSUIDs.append(int(nsuID, base=10))
+                continue
+            file = open("missing_new/%s.json" % (titleid), "w", encoding="UTF-8")
+            json.dump(entry, file, indent="\t", ensure_ascii=True)
+            file.close()
+
+file = open("missing_new/NSUIDs.json", "w", encoding="UTF-8")
+json.dump(missing_NSUIDs, file, ensure_ascii=False)
+file.close()
 
 missing_games = glob.glob("missing/*.json")
+
 for i in range(len(missing_games)):
     titleid = Path(missing_games[i]).stem
     if (titleid in LIST):
@@ -199,9 +265,3 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
-new_file = open("output/nsuIDs.json", "w", encoding="UTF-8")
-json.dump(NSUIDs, new_file, ensure_ascii=False)
-new_file.close()
-new_file = open("output2/nsuIDs.json", "w", encoding="UTF-8")
-json.dump(NS2UIDs, new_file, ensure_ascii=False)
-new_file.close()
