@@ -119,7 +119,10 @@ failed_requests = 0
 
 headers["Authorization"] = scrape_with_selenium()
 
-for product_id in NSUIDs:
+i = 0
+
+while(i < len(NSUIDs)):
+    product_id = NSUIDs[i]
     try:
         # Construct the URL with the current product ID
         url = f"{base_url}{product_id}"
@@ -136,42 +139,40 @@ for product_id in NSUIDs:
             
             successful_requests += 1
             print(f"✓ Product {product_id} - HTTP 200 - Saved to {file_path}")
+            i += 1
         elif response.status_code == 401:
             print(f"✗ Bearer is dead, renewing bearer...")
             headers["Authorization"] = scrape_with_selenium()
-            response = requests.get(url, headers=headers, params=params, timeout=10)
-            if response.status_code != 200:
-                print(f"✗ Bearer not valid, cancelling...")
-                sys.exit(2)
-            file_path = os.path.join("scrap", f"{product_id}.json")
-            with open(file_path, "w", encoding="utf-8") as f:
-                json.dump(response.json(), f, ensure_ascii=False, indent=2)
-            successful_requests += 1
-            print(f"✓ Product {product_id} - HTTP 200 - Saved to {file_path}")
         else:
             failed_requests += 1
             print(f"✗ Product {product_id} - HTTP {response.status_code}")
+            i += 1
     
     except requests.exceptions.Timeout:
         failed_requests += 1
         print(f"✗ Product {product_id} - Timeout error")
+        break
     
     except requests.exceptions.RequestException as e:
         failed_requests += 1
         print(f"✗ Product {product_id} - Request error: {e}")
+        break
     
     except json.JSONDecodeError:
         failed_requests += 1
         print(f"✗ Product {product_id} - Invalid JSON response")
+        break
     
     except Exception as e:
         failed_requests += 1
         print(f"✗ Product {product_id} - Error: {e}")
+        break
 
 print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
 
 
