@@ -10,7 +10,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 # Authorization token
 headers = {}
-headers["Authorization"] = scrape_with_selenium()
 
 def scrape_with_selenium():
     """Uses Selenium to load the page and monitor network requests"""
@@ -121,6 +120,8 @@ print(f"Starting scraper...")
 successful_requests = 0
 failed_requests = 0
 
+headers["Authorization"] = scrape_with_selenium()
+
 i = 0
 
 while(i < len(NSUIDs)):
@@ -174,6 +175,7 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
 
 
