@@ -160,6 +160,7 @@ json.dump(NS2UIDs, new_file, ensure_ascii=False)
 new_file.close()
 
 # Scrap Japanese eshop
+printf("Scrapping Japanese eshop...")
 
 tree = ET.parse('switch.xml')
 root = tree.getroot()
@@ -184,15 +185,6 @@ for title in root.findall('TitleInfo'):
 
     if (nsuID in NSUIDs or nsuID in missing_NSUIDs):
         continue
-    
-    entry = {}
-    entry["name"] = title.find('TitleName').text
-    entry["publisher"] = title.find('MakerName').text
-    entry["releaseDate"] = title.find('SalesDate').text
-    entry["bannerUrl"] = title.find('ScreenshotImgURL').text
-    entry["iconUrl"] = ""
-    entry["screenshots"] = []
-    entry["size"] = 0
 
     new_url = base_url + nsuID
 
@@ -208,6 +200,14 @@ for title in root.findall('TitleInfo'):
             if os.path.isfile("output/titleid/%s.json"):
                 missing_NSUIDs.append(int(nsuID, base=10))
                 continue
+            entry = {}
+            entry["name"] = title.find('TitleName').text
+            entry["publisher"] = title.find('MakerName').text
+            entry["releaseDate"] = title.find('SalesDate').text
+            entry["bannerUrl"] = title.find('ScreenshotImgURL').text
+            entry["iconUrl"] = ""
+            entry["screenshots"] = []
+            entry["size"] = 0
             file = open("missing_new/%s.json" % (titleid), "w", encoding="UTF-8")
             json.dump(entry, file, indent="\t", ensure_ascii=True)
             file.close()
@@ -265,3 +265,4 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
