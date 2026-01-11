@@ -160,7 +160,7 @@ json.dump(NS2UIDs, new_file, ensure_ascii=False)
 new_file.close()
 
 # Scrap Japanese eshop
-printf("Scrapping Japanese eshop...")
+print("Scrapping Japanese eshop...")
 
 tree = ET.parse('switch.xml')
 root = tree.getroot()
@@ -265,4 +265,5 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
 
