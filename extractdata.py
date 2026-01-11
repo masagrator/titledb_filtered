@@ -8,6 +8,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+# Authorization token
+headers = {}
+headers["Authorization"] = scrape_with_selenium()
+
 def scrape_with_selenium():
     """Uses Selenium to load the page and monitor network requests"""
     from selenium.webdriver.chrome.options import Options
@@ -79,6 +83,9 @@ def scrape_with_selenium():
                             
             except (json.JSONDecodeError, KeyError, TypeError):
                 pass
+        if not auth_headers:
+            print("No Authorization header found in network logs!")
+            return headers["Authorization"]
         
         return auth_headers[0]
     
@@ -104,9 +111,6 @@ os.makedirs("scrap", exist_ok=True)
 # API details
 base_url = "https://store-jp.nintendo.com/mobify/proxy/api/product/shopper-products/v1/organizations/f_ecom_bfgj_prd/products/"
 
-# Authorization token
-headers = {}
-
 params = {
     "currency": "JPY",
     "locale": "ja-JP",
@@ -116,8 +120,6 @@ params = {
 print(f"Starting scraper...")
 successful_requests = 0
 failed_requests = 0
-
-headers["Authorization"] = scrape_with_selenium()
 
 i = 0
 
@@ -172,6 +174,7 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
 
 
