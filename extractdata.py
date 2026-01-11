@@ -2,14 +2,26 @@ import requests
 import json
 import os
 from pathlib import Path
+import xml.etree.ElementTree as ET
+
+tree = ET.parse('switch.xml')
+root = tree.getroot()
+
+NSUIDs = []
+
+for title in root.findall('TitleInfo'):
+    link = title.find('LinkURL').text
+    
+    nsuID = link.replace("/titles/", "")
+
+    if nsuID not in NSUIDs:
+        NSUIDs.append(nsuID)
 
 # Create the scrap folder if it doesn't exist
 os.makedirs("scrap", exist_ok=True)
 
 # API details
 base_url = "https://store-jp.nintendo.com/mobify/proxy/api/product/shopper-products/v1/organizations/f_ecom_bfgj_prd/products/"
-product_id_start = 70010000096867
-product_id_end = 70010000100000  # Adjust this range as needed
 
 # Authorization token
 headers = {
@@ -22,11 +34,11 @@ params = {
     "siteId": "MNS"
 }
 
-print(f"Starting scraper from {product_id_start} to {product_id_end}...")
+print(f"Starting scraper...")
 successful_requests = 0
 failed_requests = 0
 
-for product_id in range(product_id_start, product_id_end + 1):
+for product_id in NSUIDs:
     try:
         # Construct the URL with the current product ID
         url = f"{base_url}{product_id}"
