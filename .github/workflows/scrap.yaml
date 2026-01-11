@@ -44,5 +44,3 @@ jobs:
           name: scrap-data
           path: scrap/
           retention-days: 7
-          git commit -m "Last update: $(timestamp)" || exit 0
-          git push
