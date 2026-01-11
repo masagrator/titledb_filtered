@@ -12,7 +12,7 @@ import time
 # Authorization token
 glob_headers = {}
 
-call = 0
+callcount = 0
 
 def scrape_with_selenium():
     """Uses Selenium to load the page and monitor network requests"""
@@ -54,12 +54,14 @@ def scrape_with_selenium():
         driver.delete_all_cookies()
         driver.execute_cdp_cmd('Network.clearBrowserCache', {})
         driver.execute_cdp_cmd('Network.clearBrowserCookies', {})
-        if (call == 0): driver.get("https://store-jp.nintendo.com/item/software/D70010000083295")
-        elif (call == 1): driver.get("https://store-jp.nintendo.com/item/software/D70010000089960")
-        elif (call == 2): driver.get("https://store-jp.nintendo.com/item/software/D70010000096867")
-        if (call >= 2):
-            call = 0
-        else: call += 1
+        match(callcount):
+            case 0: driver.get("https://store-jp.nintendo.com/item/software/D70010000083295")
+            case 1: driver.get("https://store-jp.nintendo.com/item/software/D70010000089960")
+            case 2: driver.get("https://store-jp.nintendo.com/item/software/D70010000096867")
+
+        if (callcount >= 2):
+            callcount = 0
+        else: callcount += 1
         # Wait for the API call to be made
         WebDriverWait(driver, 30).until(
             lambda driver: driver.execute_script('return document.readyState') == 'complete'
@@ -206,6 +208,7 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
 
 
