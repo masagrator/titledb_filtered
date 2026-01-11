@@ -44,6 +44,8 @@ jobs:
       - name: Run Python script
         run: |
           python extractdata.py
+          python extractdata.py
+          python extractdata.py
 
       - name: Upload scrap folder as artifact
         uses: actions/upload-artifact@v4
