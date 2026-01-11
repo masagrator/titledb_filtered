@@ -39,7 +39,7 @@ jobs:
 
       - name: Upload scrap folder as artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: scrap-data
           path: scrap/
