@@ -71,7 +71,7 @@ def scrape_with_selenium():
             except (json.JSONDecodeError, KeyError, TypeError):
                 pass
         
-        return auth_headers
+        return auth_headers[0]
     
     finally:
         driver.quit()
@@ -163,4 +163,5 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
