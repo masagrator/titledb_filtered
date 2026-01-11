@@ -15,6 +15,8 @@ glob_headers = {}
 callcount = 0
 
 def scrape_with_selenium():
+    global callcount
+    
     """Uses Selenium to load the page and monitor network requests"""
     from selenium.webdriver.chrome.options import Options
     from selenium.webdriver.chrome.service import Service
@@ -208,6 +210,7 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
 
 
