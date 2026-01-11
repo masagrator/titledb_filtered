@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # Authorization token
-headers = {}
+glob_headers = {}
 
 def scrape_with_selenium():
     """Uses Selenium to load the page and monitor network requests"""
@@ -84,7 +84,7 @@ def scrape_with_selenium():
                 pass
         if not auth_headers:
             print("No Authorization header found in network logs!")
-            return headers["Authorization"]
+            return glob_headers["Authorization"]
         
         return auth_headers[0]
     
@@ -120,9 +120,11 @@ print(f"Starting scraper...")
 successful_requests = 0
 failed_requests = 0
 
-headers["Authorization"] = scrape_with_selenium()
+glob_headers["Authorization"] = scrape_with_selenium()
 
 i = 0
+error_count = 0
+max_error_count = 30
 
 while(i < len(NSUIDs)):
     product_id = NSUIDs[i]
@@ -131,7 +133,7 @@ while(i < len(NSUIDs)):
         url = f"{base_url}{product_id}"
         
         # Make the request
-        response = requests.get(url, headers=headers, params=params, timeout=30)
+        response = requests.get(url, headers=glob_headers, params=params, timeout=30)
         
         # Check if the response is successful (HTTP 200)
         if response.status_code == 200:
@@ -143,42 +145,35 @@ while(i < len(NSUIDs)):
             successful_requests += 1
             print(f"✓ Product {product_id} - HTTP 200 - Saved to {file_path}")
             i += 1
-        elif response.status_code == 401:
+        elif response.status_code != 404:
             print(f"✗ Bearer is dead, renewing bearer...")
-            headers["Authorization"] = scrape_with_selenium()
+            glob_headers["Authorization"] = scrape_with_selenium()
         else:
             failed_requests += 1
             print(f"✗ Product {product_id} - HTTP {response.status_code}")
             i += 1
     
     except requests.exceptions.Timeout:
-        failed_requests += 1
+        error_count += 1
         print(f"✗ Product {product_id} - Timeout error")
-        break
+        if (error_count > max_error_count): break
     
     except requests.exceptions.RequestException as e:
-        failed_requests += 1
+        error_count += 1
         print(f"✗ Product {product_id} - Request error: {e}")
-        break
+        if (error_count > max_error_count): break
     
     except json.JSONDecodeError:
-        failed_requests += 1
+        error_count += 1
         print(f"✗ Product {product_id} - Invalid JSON response")
-        break
+        if (error_count > max_error_count): break
     
     except Exception as e:
-        failed_requests += 1
+        error_count += 1
         print(f"✗ Product {product_id} - Error: {e}")
-        break
+        if (error_count > max_error_count): break
 
 print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
-
-
-
-
-
-
-
