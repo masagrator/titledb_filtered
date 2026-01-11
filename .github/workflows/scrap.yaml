@@ -24,10 +24,17 @@ jobs:
         with:
           python-version: '3.13'
 
+      - name: Clone Switch.xml
+        run: |
+          wget https://www.nintendo.co.jp/data/software/xml/switch.xml
+      
       # 5. Run your Python script
-      - name: Run Python script
+      - name: Install libraries
         run: |
           pip install requests
+
+      - name: Run Python script
+        run: |
           python extractdata.py
 
       - name: Upload scrap folder as artifact
