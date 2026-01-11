@@ -176,7 +176,7 @@ while(i < len(NSUIDs)):
             print(f"✗ Bearer is dead, renewing bearer...")
             glob_headers["Authorization"] = scrape_with_selenium()
             error_count += 1
-            f (error_count > max_error_count): break
+            if (error_count > max_error_count): break
         else:
             failed_requests += 1
             print(f"✗ Product {product_id} - HTTP {response.status_code}")
@@ -206,5 +206,6 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
 
