@@ -1,4 +1,4 @@
-name: Run Python Script and Push Output
+name: Scrap japanese eshop
 
 # Controls when the action will run.
 on:
