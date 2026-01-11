@@ -39,7 +39,7 @@ jobs:
       # 5. Run your Python script
       - name: Install libraries
         run: |
-          pip install requests selenium
+          pip install requests selenium webdriver-manager
 
       - name: Run Python script
         run: |
