@@ -24,6 +24,14 @@ jobs:
         with:
           python-version: '3.13'
 
+      - name: Setup Chrome
+        # Use the official action from the marketplace
+        uses: browser-actions/setup-chrome@v2
+        # The action installs a stable version of Chrome for Testing by default
+  
+      - name: Check Chrome Version
+        run: google-chrome --version # or just `chrome --version` depending on OS
+     
       - name: Clone Switch.xml
         run: |
           wget https://www.nintendo.co.jp/data/software/xml/switch.xml
@@ -31,7 +39,7 @@ jobs:
       # 5. Run your Python script
       - name: Install libraries
         run: |
-          pip install requests
+          pip install requests selenium
 
       - name: Run Python script
         run: |
