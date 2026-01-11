@@ -213,8 +213,8 @@ for title in root.findall('TitleInfo'):
             entry["iconUrl"] = ""
             entry["screenshots"] = []
             entry["size"] = 0
-            if (isSwitch2 == false): file = open("missing_new/titleid/%s.json" % (titleid), "w", encoding="UTF-8")
-            else: file = open("missing_new/titleid2/%s.json" % (titleid), "w", encoding="UTF-8")
+            if (isSwitch2): file = open("missing_new/titleid2/%s.json" % (titleid), "w", encoding="UTF-8")
+            else: file = open("missing_new/titleid/%s.json" % (titleid), "w", encoding="UTF-8")
             json.dump(entry, file, indent="\t", ensure_ascii=True)
             file.close()
 
@@ -271,6 +271,7 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
 
 
 
