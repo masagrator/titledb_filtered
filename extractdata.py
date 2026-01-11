@@ -159,17 +159,20 @@ max_error_count = 30
 
 while(i < len(NSUIDs)):
     product_id = NSUIDs[i]
+    url = f"{base_url}{product_id}"
+    file_path = os.path.join("scrap", f"{product_id}.json")
+    
+    if (os.path.isfile(file_path) == True):
+        i += 1
+        continue
+
     try:
-        # Construct the URL with the current product ID
-        url = f"{base_url}{product_id}"
-        
         # Make the request
         response = requests.get(url, headers=glob_headers, params=params, timeout=30)
         
         # Check if the response is successful (HTTP 200)
         if response.status_code == 200:
             # Save the JSON response to a file
-            file_path = os.path.join("scrap", f"{product_id}.json")
             with open(file_path, "w", encoding="utf-8") as f:
                 json.dump(response.json(), f, ensure_ascii=False, indent=2)
             
@@ -210,6 +213,7 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
 
 
