@@ -3,6 +3,78 @@ import json
 import os
 from pathlib import Path
 import xml.etree.ElementTree as ET
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+def scrape_with_selenium():
+    """Uses Selenium to load the page and monitor network requests"""
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.chrome.service import Service
+    
+    # Setup Chrome options
+    chrome_options = Options()
+    # chrome_options.add_argument("--headless")  # Uncomment for headless mode
+    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    chrome_options.add_experimental_option('useAutomationExtension', False)
+    
+    # Enable logging to capture network activity
+    chrome_options.set_capability('goog:loggingPrefs', {'performance': 'ALL'})
+    
+    driver = webdriver.Chrome(options=chrome_options)
+    
+    try:
+        print("Loading page...")
+        driver.get("https://store-jp.nintendo.com/item/software/D70010000083295")
+        
+        # Wait for the API call to be made
+        WebDriverWait(driver, 10).until(
+            lambda driver: driver.execute_script('return document.readyState') == 'complete'
+        )
+        
+        # Get performance logs (network requests)
+        logs = driver.get_log('performance')
+        
+        auth_headers = []
+        for log in logs:
+            try:
+                message = json.loads(log['message'])['message']
+                
+                # Look for network requests
+                if message['method'] == 'Network.responseReceived':
+                    request_id = message['params']['requestId']
+                    url = message['params']['response']['url']
+                    
+                    # Check if this is the API endpoint we're looking for
+                    if 'shopper-products' in url:
+                        print(f"\n✓ Found API call: {url}")
+                        
+                        # Try to get request details
+                        try:
+                            request_body = driver.execute_cdp_cmd('Network.getRequestPostData', {'requestId': request_id})
+                            print(f"Response body available")
+                        except:
+                            pass
+                
+                # Look for request headers
+                if message['method'] == 'Network.requestWillBeSent':
+                    url = message['params']['request']['url']
+                    if 'shopper-products' in url:
+                        headers = message['params']['request']['headers']
+                        if 'Authorization' in headers:
+                            auth_headers.append(headers['Authorization'])
+                            print(f"\n✓ Authorization Header Found!")
+                            print(f"Authorization: {headers['Authorization'][:50]}...")
+                            
+            except (json.JSONDecodeError, KeyError, TypeError):
+                pass
+        
+        return auth_headers
+    
+    finally:
+        driver.quit()
 
 tree = ET.parse('switch.xml')
 root = tree.getroot()
@@ -24,9 +96,7 @@ os.makedirs("scrap", exist_ok=True)
 base_url = "https://store-jp.nintendo.com/mobify/proxy/api/product/shopper-products/v1/organizations/f_ecom_bfgj_prd/products/"
 
 # Authorization token
-headers = {
-    "Authorization": "Bearer eyJ2ZXIiOiIxLjAiLCJqa3UiOiJzbGFzL3Byb2QvYmZnal9wcmQiLCJraWQiOiJjNTlkMTQxMS0yZTdlLTQ1NTktYTRlYy01ODE1MTJiN2MzZmUiLCJ0eXAiOiJqd3QiLCJjbHYiOiJKMi4zLjQiLCJhbGciOiJFUzI1NiJ9.eyJhdXQiOiJHVUlEIiwic2NwIjoic2ZjYy5zaG9wcGVyLW15YWNjb3VudC5iYXNrZXRzIHNmY2Muc2hvcHBlci1kaXNjb3Zlcnktc2VhcmNoIHNmY2Muc2hvcHBlci1wcm9kdWN0cyBzZmNjLnNob3BwZXItbXlhY2NvdW50LnJ3IHNmY2Muc2hvcHBlci1jdXN0b21lcnMubG9naW4gc2ZjYy5zaG9wcGVyLWV4cGVyaWVuY2Ugc2ZjYy5zaG9wcGVyLWJhc2tldHMtb3JkZXJzIHNmY2Muc2hvcHBlci1jdXN0b21lcnMucmVnaXN0ZXIgc2ZjYy5wcm9kdWN0cyBzZmNjLnNob3BwZXItbXlhY2NvdW50LmFkZHJlc3Nlcy5ydyBzZmNjLnNob3BwZXItbXlhY2NvdW50LnByb2R1Y3RsaXN0cy5ydyBzZmNjLnNob3BwZXItcHJvZHVjdGxpc3RzIHNmY2Muc2hvcHBlci1wcm9tb3Rpb25zIHNmY2Muc2Vzc2lvbl9icmlkZ2Ugc2ZjYy5zaG9wcGVyLWJhc2tldHMtb3JkZXJzLnJ3IHNmY2Muc2Vzc2lvbl9icmlkZ2VzZmNjLnNob3BwZXItbXlhY2NvdW50LmFkZHJlc3NlcyBzZmNjLnNob3BwZXItZ2lmdC1jZXJ0aWZpY2F0ZXMgc2ZjYy5zaG9wcGVyLW15YWNjb3VudC5wYXltZW50aW5zdHJ1bWVudHMucncgY19wd2FfciBzZmNjLnNob3BwZXItbXlhY2NvdW50Lm9yZGVyc3NmY2Muc2hvcHBlci1teWFjY291bnQucGF5bWVudGluc3RydW1lbnRzIHNmY2Muc2hvcHBlci1wcm9kdWN0LXNlYXJjaCBzZmNjLnNob3BwZXItbXlhY2NvdW50LnByb2R1Y3RsaXN0cyBzZmNjLnNob3BwZXItY2F0ZWdvcmllcyBzZmNjLnNob3BwZXItbXlhY2NvdW50Iiwic3ViIjoiY2Mtc2xhczo6YmZnal9wcmQ6OnNjaWQ6MWVjNjk5MWEtMWU4ZS00YzA3LWJjNWMtOGZjOTRhMWE2MTI3Ojp1c2lkOjY3ZTljZTgwLWQxNTktNDZhOS05ZTg1LTJjZWYzNDBmNmMyNyIsImN0eCI6InNsYXMiLCJpc3MiOiJzbGFzL3Byb2QvYmZnal9wcmQiLCJpc3QiOjEsImRudCI6IjAiLCJhdWQiOiJjb21tZXJjZWNsb3VkL3Byb2QvYmZnal9wcmQiLCJuYmYiOjE3NjgxMjE2OTEsInN0eSI6IlVzZXIiLCJpc2IiOiJ1aWRvOnNsYXM6OnVwbjpHdWVzdDo6dWlkbjpHdWVzdCBVc2VyOjpnY2lkOmJjbEhCSm11bEptYmFSeGJjWm1xWVlsS2MzOjpjaGlkOk1OUyIsImV4cCI6MTc2ODEyMzUyMSwiaWF0IjoxNzY4MTIxNzIxLCJqdGkiOiJDMkM3MjY0Nzc2OTQwLTE2NDk4MjEzOTUxMDQzMTA4MzY0MDcxNjQ3MyJ9.il6DUByuYrxRe4MU45OwoEK94rHNFfxQm6lAd75momDIY0StvK-W9Q9esmWLuFMvvnSAEZ9CyrfICWMJ79wb2w"
-}
+headers = {}
 
 params = {
     "currency": "JPY",
@@ -37,6 +107,8 @@ params = {
 print(f"Starting scraper...")
 successful_requests = 0
 failed_requests = 0
+
+headers["Authorization"] = scrape_with_selenium()
 
 for product_id in NSUIDs:
     try:
@@ -56,8 +128,17 @@ for product_id in NSUIDs:
             successful_requests += 1
             print(f"✓ Product {product_id} - HTTP 200 - Saved to {file_path}")
         elif response.status_code == 401:
-            print(f"✗ Bearer is dead, cancelling...")
-            break
+            print(f"✗ Bearer is dead, renewing bearer...")
+            headers["Authorization"] = scrape_with_selenium()
+            response = requests.get(url, headers=headers, params=params, timeout=10)
+            if response.status_code != 200:
+                print(f"✗ Bearer not valid, cancelling...")
+                sys.exit(2)
+            file_path = os.path.join("scrap", f"{product_id}.json")
+            with open(file_path, "w", encoding="utf-8") as f:
+                json.dump(response.json(), f, ensure_ascii=False, indent=2)
+            successful_requests += 1
+            print(f"✓ Product {product_id} - HTTP 200 - Saved to {file_path}")
         else:
             failed_requests += 1
             print(f"✗ Product {product_id} - HTTP {response.status_code}")
@@ -82,3 +163,4 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
