@@ -5,7 +5,7 @@ import lzma
 import glob
 from pathlib import Path
 import xml.etree.ElementTree as ET
-import requests
+from datetime import datetime
 
 files = [
     "US.en",
@@ -203,7 +203,8 @@ for title in root.findall('TitleInfo'):
             entry = {}
             entry["name"] = title.find('TitleName').text
             entry["publisher"] = title.find('MakerName').text
-            entry["releaseDate"] = title.find('SalesDate').text
+            date_obj = datetime.strptime(title.find('SalesDate').text, "%Y.%m.%d")
+            entry["releaseDate"] = int(date_obj.strftime("%Y%m%d"))
             entry["bannerUrl"] = title.find('ScreenshotImgURL').text
             entry["iconUrl"] = ""
             entry["screenshots"] = []
@@ -265,6 +266,7 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
 
 
 
