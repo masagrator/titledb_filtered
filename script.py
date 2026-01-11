@@ -160,6 +160,7 @@ new_file = open("output2/nsuIDs.json", "w", encoding="UTF-8")
 json.dump(NS2UIDs, new_file, ensure_ascii=False)
 new_file.close()
 
+"""
 # Scrap Japanese eshop
 print("Scrapping Japanese eshop...")
 
@@ -221,6 +222,7 @@ for title in root.findall('TitleInfo'):
 file = open("missing_new/NSUIDs.json", "w", encoding="UTF-8")
 json.dump(missing_NSUIDs, file, ensure_ascii=False)
 file.close()
+"""
 
 missing_games = glob.glob("missing/*.json")
 
@@ -271,11 +273,3 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
-
-
-
-
-
-
-
-
