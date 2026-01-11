@@ -124,13 +124,13 @@ for x in range(len(files)):
         if (isOunce == True):
             LIST2[entry_id] = [entry["name"]]
             LIST2_REGIONS[entry_id] = [files[x][0:2]]
-            NSU2IDs.append(entry["nsuID"])
+            NSU2IDs.append(entry["nsuId"])
             added2.append(entry_id)
         else: 
             if (entry["name"] == "Borderlands: The Handsome Collection"): entry["name"] = "Borderlands 2: Game of the Year Edition"
             LIST[entry_id] = [entry["name"]]
             LIST_REGIONS[entry_id] = [files[x][0:2]]
-            NSUIDs.append(entry["nsuID"])
+            NSUIDs.append(entry["nsuId"])
             added.append(entry_id)
         entry = {}
         entry["bannerUrl"] = DUMP[keys[i]]["bannerUrl"]
@@ -205,4 +205,5 @@ new_file.close()
 new_file = open("output2/nsuIDs.json", "w", encoding="UTF-8")
 json.dump(NS2UIDs, new_file, ensure_ascii=False)
 new_file.close()
+
 
