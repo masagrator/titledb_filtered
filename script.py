@@ -6,6 +6,7 @@ import glob
 from pathlib import Path
 import xml.etree.ElementTree as ET
 from datetime import datetime
+import requests
 
 files = [
     "US.en",
@@ -176,7 +177,9 @@ if os.path.isfile("missing_new/NSUIDs.json"):
     missing_NSUIDs = json.load(file)
     NSUIDs.extend(missing_NSUIDs)
     file.close()
-else: os.makedirs("missing_new", exist_ok=True)
+else: 
+    os.makedirs("missing_new/titleid", exist_ok=True)
+    os.makedirs("missing_new/titleid2", exist_ok=True)
 
 for title in root.findall('TitleInfo'):
     link = title.find('LinkURL').text
@@ -195,8 +198,9 @@ for title in root.findall('TitleInfo'):
         if (pos != -1):
             pos += 18
             titleid = html_source_code[pos:pos+16]
+            isSwitch2 = false
             if titleid.startswith("0400"):
-                continue
+                isSwitch2 = true
             missing_NSUIDs.append(int(nsuID, base=10))
             if os.path.isfile("output/titleid/%s.json" % titleid):
                 continue
@@ -209,7 +213,8 @@ for title in root.findall('TitleInfo'):
             entry["iconUrl"] = ""
             entry["screenshots"] = []
             entry["size"] = 0
-            file = open("missing_new/%s.json" % (titleid), "w", encoding="UTF-8")
+            if (isSwitch2 == false): file = open("missing_new/titleid/%s.json" % (titleid), "w", encoding="UTF-8")
+            else: file = open("missing_new/titleid2/%s.json" % (titleid), "w", encoding="UTF-8")
             json.dump(entry, file, indent="\t", ensure_ascii=True)
             file.close()
 
@@ -266,6 +271,7 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
 
 
 
