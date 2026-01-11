@@ -42,7 +42,9 @@ jobs:
 
       # 5. Run your Python script
       - name: Run Python script
-        run: python script.py
+        run: |
+          pip install requests
+          python script.py
 
       # 6. Commit and push the files from the "output" folder
       - name: Push new files to repository
