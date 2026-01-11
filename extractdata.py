@@ -56,7 +56,7 @@ def scrape_with_selenium():
         driver.execute_cdp_cmd('Network.clearBrowserCookies', {})
         if (call == 0): driver.get("https://store-jp.nintendo.com/item/software/D70010000083295")
         elif (call == 1): driver.get("https://store-jp.nintendo.com/item/software/D70010000089960")
-        else if (call == 2): driver.get("https://store-jp.nintendo.com/item/software/D70010000096867")
+        elif (call == 2): driver.get("https://store-jp.nintendo.com/item/software/D70010000096867")
         if (call == 2):
             call = 0
         else call += 1
@@ -206,6 +206,7 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
 
 
