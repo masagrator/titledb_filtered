@@ -159,12 +159,13 @@ max_error_count = 30
 
 while(i < len(NSUIDs)):
     product_id = NSUIDs[i]
-    url = f"{base_url}{product_id}"
     file_path = os.path.join("scrap", f"{product_id}.json")
     
     if (os.path.isfile(file_path) == True):
         i += 1
         continue
+
+    url = f"{base_url}{product_id}"
 
     try:
         # Make the request
@@ -213,6 +214,7 @@ print(f"\n--- Summary ---")
 print(f"Successful requests (HTTP 200): {successful_requests}")
 print(f"Failed requests: {failed_requests}")
 print(f"Total: {successful_requests + failed_requests}")
+
 
 
 
