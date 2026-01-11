@@ -197,7 +197,7 @@ for title in root.findall('TitleInfo'):
             titleid = html_source_code[pos:pos+16]
             if titleid.startswith("0400"):
                 continue
-            if os.path.isfile("output/titleid/%s.json"):
+            if os.path.isfile("output/titleid/%s.json" % titleid):
                 missing_NSUIDs.append(int(nsuID, base=10))
                 continue
             entry = {}
@@ -265,5 +265,6 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
 
 
