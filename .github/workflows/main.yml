@@ -38,7 +38,6 @@ jobs:
       - name: Clone TitleDB
         run: |
           git clone --depth 1 https://github.com/blawar/titledb.git
-          wget https://www.nintendo.co.jp/data/software/xml/switch.xml
 
       # 5. Run your Python script
       - name: Run Python script
@@ -53,7 +52,6 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add --ignore-removal output/
           git add --ignore-removal output2/
-          git add --ignore-removal missing_new/
           timestamp=$(date -u)
           git commit -m "Last update: $(timestamp)" || exit 0
           git push
