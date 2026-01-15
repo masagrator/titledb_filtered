@@ -5,6 +5,8 @@ import sys
 
 region = ""
 
+FOLDERS = ["output", "output2"]
+
 def checkTitleid(titleid: str):
     url = f"https://ec.nintendo.com/apps/{titleid}/TH"
     with requests.head(url, stream=True, allow_redirects=False) as response:
@@ -20,21 +22,22 @@ def checkTitleid(titleid: str):
             OUTPUT[f"{titleid}"] = False
     
 
-with open("output/main_regions.json", "r", encoding="UTF-8") as f:
-    titleids = list(json.load(f).keys())
-
-try:
-    with open("output/main_regions_th.json", "r", encoding="UTF-8") as f:
-        OUTPUT = json.load(f)
-except:
-    OUTPUT = {}
-
-keys = list(OUTPUT.keys())
-
-titleids[:] = [x for x in titleids if x not in keys]
-
-with ThreadPoolExecutor(max_workers=1) as executor:
-    executor.map(checkTitleid, titleids)
-
-with open("output/main_regions_th.json", "w", encoding="UTF-8") as f:
-    json.dump(OUTPUT, f)
+for folder in FOLDERS:
+    with open(f"{folder}/main_regions.json", "r", encoding="UTF-8") as f:
+        titleids = list(json.load(f).keys())
+    
+    try:
+        with open(f"{folder}/main_regions_th.json", "r", encoding="UTF-8") as f:
+            OUTPUT = json.load(f)
+    except:
+        OUTPUT = {}
+    
+    keys = list(OUTPUT.keys())
+    
+    titleids[:] = [x for x in titleids if x not in keys]
+    
+    with ThreadPoolExecutor(max_workers=1) as executor:
+        executor.map(checkTitleid, titleids)
+    
+    with open(f"{folder}/main_regions_th.json", "w", encoding="UTF-8") as f:
+        json.dump(OUTPUT, f)
