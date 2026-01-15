@@ -264,7 +264,7 @@ with lzma.open("output2/main.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2, ensure_ascii=False).encode("UTF-8"))
 
 with open("output/main_regions_th.json", "r", encoding="UTF-8) as f:
-          TH_TITLEIDS = json.load(f)
+    TH_TITLEIDS = json.load(f)
 
 for titleid in LIST_REGIONS:
     try:
@@ -283,3 +283,4 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
