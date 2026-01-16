@@ -16,12 +16,12 @@ def checkTitleid(titleid: str):
         status_code = response.status_code
         if (status_code == 303):
             OUTPUT[f"{titleid}"]["True"].append(region)
-            print(f"✓ {titleid}")
+            print(f"✓ {region} {titleid}")
         elif (status_code == 403):
             print("✗ Hit rate limit. Aborting...")
             sys.exit(1)
         else: 
-            print(f"✗ {titleid}: {status_code}")
+            print(f"✗ {region} {titleid}: {status_code}")
             OUTPUT[f"{titleid}"]["False"].append(region)
 
 try:
@@ -44,9 +44,12 @@ for folder in FOLDERS:
     for m_region in REGIONS:
         region = m_region
         titleids = [x for x in main_titleids if (m_region not in OUTPUT[f"{titleid}"]["True"] and m_region not in OUTPUT[f"{titleid}"]["False"])]
+
+        print(f"Processing {region} eshop, {len(titleids)} entries")
         
         with ThreadPoolExecutor(max_workers=1) as executor:
             executor.map(checkTitleid, titleids)
         
     with open(f"{folder}/main_regions_alt.json", "w", encoding="UTF-8") as f:
         json.dump(OUTPUT, f, indent="\t")
+
