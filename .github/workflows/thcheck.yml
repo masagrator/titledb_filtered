@@ -38,7 +38,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add --ignore-removal output/main_regions_th.json
-          git add --ignore-removal output2/main_regions_th.json
+          git add --ignore-removal output/main_regions_alt.json
+          git add --ignore-removal output2/main_regions_alt.json
           git commit -m "Update" || exit 0
           git push
