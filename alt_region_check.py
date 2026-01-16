@@ -48,5 +48,5 @@ for folder in FOLDERS:
         with ThreadPoolExecutor(max_workers=1) as executor:
             executor.map(checkTitleid, titleids)
         
-with open(f"{folder}/main_regions_alt.json", "w", encoding="UTF-8") as f:
-    json.dump(OUTPUT, f, indent="\t")
+    with open(f"{folder}/main_regions_alt.json", "w", encoding="UTF-8") as f:
+        json.dump(OUTPUT, f, indent="\t")
