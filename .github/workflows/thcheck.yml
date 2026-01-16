@@ -31,7 +31,7 @@ jobs:
 
       - name: Run Python script
         run: |
-          python -u th_check.py
+          python -u alt_region_check.py
 
       # 6. Commit and push the files from the "output" folder
       - name: Push new files to repository
