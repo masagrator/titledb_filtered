@@ -263,7 +263,7 @@ new_file.close()
 with lzma.open("output2/main.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2, ensure_ascii=False).encode("UTF-8"))
 
-with open("output/main_regions_th.json", "r", encoding="UTF-8") as f:
+with open("output/main_regions_alt.json", "r", encoding="UTF-8") as f:
     TH_TITLEIDS = json.load(f)
 
 for titleid in LIST_REGIONS:
@@ -272,7 +272,7 @@ for titleid in LIST_REGIONS:
     except:
         print(f"Titleid {titleid} not found!")
 
-with open("output2/main_regions_th.json", "r", encoding="UTF-8") as f:
+with open("output2/main_regions_alt.json", "r", encoding="UTF-8") as f:
     TH_TITLEIDS = json.load(f)
 
 for titleid in LIST2_REGIONS:
@@ -292,6 +292,3 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
-
-
-
