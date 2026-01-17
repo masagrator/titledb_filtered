@@ -43,7 +43,7 @@ for folder in FOLDERS:
 
     for m_region in REGIONS:
         region = m_region
-        titleids = [x for x in main_titleids if (m_region not in OUTPUT[f"{titleid}"]["True"] and m_region not in OUTPUT[f"{titleid}"]["False"])]
+        titleids = [titleid for titleid in main_titleids if (m_region not in OUTPUT[f"{titleid}"]["True"] and m_region not in OUTPUT[f"{titleid}"]["False"])]
 
         print(f"Processing {region} eshop, {len(titleids)} entries")
         
