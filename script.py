@@ -267,19 +267,13 @@ with open("output/main_regions_alt.json", "r", encoding="UTF-8") as f:
     TH_TITLEIDS = json.load(f)
 
 for titleid in LIST_REGIONS:
-    try:
-        if (TH_TITLEIDS[titleid] == True): LIST_REGIONS[titleid].append("TH")
-    except:
-        print(f"Titleid {titleid} not found!")
+    LIST_REGIONS[titleid] += TH_TITLEIDS[titleid]["True"]
 
 with open("output2/main_regions_alt.json", "r", encoding="UTF-8") as f:
     TH_TITLEIDS = json.load(f)
 
 for titleid in LIST2_REGIONS:
-    try:
-        if (TH_TITLEIDS[titleid] == True): LIST2_REGIONS[titleid].append("TH")
-    except:
-        print(f"Titleid {titleid} not found!")
+    LIST2_REGIONS[titleid] += TH_TITLEIDS[titleid]["True"]
     
 new_file = open("output/main_regions.json", "w", encoding="UTF-8")
 json.dump(LIST_REGIONS, new_file, ensure_ascii=False)
