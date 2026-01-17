@@ -258,15 +258,23 @@ missing_games = glob.glob("eshopScrapper/output/titleid/*.json")
 
 for i in range(len(missing_games)):
     titleid = Path(missing_games[i]).stem
-    if (titleid in LIST):
-        continue
+    isOunce = False
+    if (titleid.startswith("0400"):
+        isOunce = True
+
+    if isOunce:
+        if titleid in LIST2: continue
+    else:
+        if titleid in LIST: continue
     file = open(missing_games[i], "r", encoding="UTF-8")
     DUMP = json.load(file)
     file.close()
     if isinstance(DUMP["name"], list):
-        LIST[titleid] = DUMP["name"]
+        if isOunce: LIST2[titleid] = DUMP["name"]
+        else: LIST[titleid] = DUMP["name"]
     else:
-        LIST[titleid] = [DUMP["name"]]
+        if isOunce: LIST2[titleid] = [DUMP["name"]]
+        else: LIST[titleid] = [DUMP["name"]]
     entry = {}
     entry["bannerUrl"] = DUMP["bannerUrl"]
     entry["iconUrl"] = DUMP["iconUrl"]
@@ -356,6 +364,3 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
-
-
-
