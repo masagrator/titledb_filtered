@@ -267,13 +267,17 @@ with open("output/main_regions_alt.json", "r", encoding="UTF-8") as f:
     TH_TITLEIDS = json.load(f)
 
 for titleid in LIST_REGIONS:
-    LIST_REGIONS[titleid] += TH_TITLEIDS[titleid]["True"]
+    try:
+        LIST_REGIONS[titleid] += TH_TITLEIDS[titleid]["True"]
+    except: print(f"{titleid} not found in main_regions_alt!")
 
 with open("output2/main_regions_alt.json", "r", encoding="UTF-8") as f:
     TH_TITLEIDS = json.load(f)
 
 for titleid in LIST2_REGIONS:
-    LIST2_REGIONS[titleid] += TH_TITLEIDS[titleid]["True"]
+    try:
+        LIST2_REGIONS[titleid] += TH_TITLEIDS[titleid]["True"]
+    except: print(f"{titleid} not found in main_regions_alt!")
     
 new_file = open("output/main_regions.json", "w", encoding="UTF-8")
 json.dump(LIST_REGIONS, new_file, ensure_ascii=False)
@@ -286,3 +290,4 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
