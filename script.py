@@ -290,11 +290,13 @@ file = open("eshopScrapper/output/main_regions_alt.json", "r", encoding="UTF-8")
 DUMP = json.load(file)
 file.close()
 
-for titleid in DUMP:
-    if (titleid.startswith("0100") == True):
-        LIST_REGIONS += titleid
-    elif (titleid.startswith("0400") == True):
-        LIST2_REGIONS += titleid
+keys = list(DUMP.keys())
+
+for i in range(len(DUMP)):
+    if (keys[i].startswith("0100") == True):
+        LIST_REGIONS[keys[i]] = DUMP[keys[i]]
+    elif (keys[i].startswith("0400") == True):
+        LIST2_REGIONS[keys[i]] = DUMP[keys[i]]
     else:
         print(f"Invalid titleid: {titleid}")
         sys.exit(2)
@@ -303,11 +305,13 @@ file = open("eshopScrapper/output/main_regions_alt2.json", "r", encoding="UTF-8"
 DUMP = json.load(file)
 file.close()
 
-for titleid in DUMP:
-    if (titleid.startswith("0100") == True):
-        LIST_REGIONS += titleid["True"]
-    elif (titleid.startswith("0400") == True):
-        LIST2_REGIONS += titleid["True"]
+keys = list(DUMP.keys())
+
+for i in range(len(DUMP)):
+    if (keys[i].startswith("0100") == True):
+        LIST_REGIONS[keys[i]] += DUMP[keys[i]]["True"]
+    elif (keys[i].startswith("0400") == True):
+        LIST2_REGIONS[keys[i]] += DUMP[keys[i]]["True"]
     else:
         print(f"Invalid titleid: {titleid}")
         sys.exit(3)
@@ -352,5 +356,6 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
 
 
