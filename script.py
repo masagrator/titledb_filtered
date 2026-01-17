@@ -7,6 +7,7 @@ from pathlib import Path
 import xml.etree.ElementTree as ET
 from datetime import datetime
 import requests
+import sys
 
 files = [
     "US.en",
@@ -246,9 +247,70 @@ for i in range(len(missing_games)):
     if (("size" not in DUMP.keys()) or (DUMP["size"] == 0) or (DUMP["size"] == None)):
         entry["size"] = "Unknown"
     else: entry["size"] = DUMP["size"]
-    new_file = open("output/titleid/%s.json" % titleid, "w", encoding="UTF-8")
+    if (titleid.startswith("0100") == True):
+        new_file = open("output/titleid/%s.json" % titleid, "w", encoding="UTF-8")
+    elif (titleid.startswith("0400") == True):
+        new_file = open("output2/titleid/%s.json" % titleid, "w", encoding="UTF-8")
     json.dump(entry, new_file, indent="\t", ensure_ascii=True)
     new_file.close()
+
+missing_games = glob.glob("eshopScrapper/output/titleid/*.json")
+
+for i in range(len(missing_games)):
+    titleid = Path(missing_games[i]).stem
+    if (titleid in LIST):
+        continue
+    file = open(missing_games[i], "r", encoding="UTF-8")
+    DUMP = json.load(file)
+    file.close()
+    if isinstance(DUMP["name"], list):
+        LIST[titleid] = DUMP["name"]
+    else:
+        LIST[titleid] = [DUMP["name"]]
+    entry = {}
+    entry["bannerUrl"] = DUMP["bannerUrl"]
+    entry["iconUrl"] = DUMP["iconUrl"]
+    entry["publisher"] = DUMP["publisher"]
+    entry["screenshots"] = DUMP["screenshots"]
+    entry["releaseDate"] = DUMP["releaseDate"]
+    if (("size" not in DUMP.keys()) or (DUMP["size"] == 0) or (DUMP["size"] == None)):
+        entry["size"] = "Unknown"
+    else: entry["size"] = DUMP["size"]
+    if (titleid.startswith("0100") == True):
+        new_file = open("output/titleid/%s.json" % titleid, "w", encoding="UTF-8")
+    elif (titleid.startswith("0400") == True):
+        new_file = open("output2/titleid/%s.json" % titleid, "w", encoding="UTF-8")
+    else:
+        print(f"Invalid titleid: {titleid}")
+        sys.exit(1)
+    json.dump(entry, new_file, indent="\t", ensure_ascii=True)
+    new_file.close()
+
+file = open("eshopScrapper/output/main_regions_alt.json", "r", encoding="UTF-8")
+DUMP = json.load(file)
+file.close()
+
+for titleid in DUMP:
+    if (titleid.startswith("0100") == True):
+        LIST_REGIONS += titleid
+    elif (titleid.startswith("0400") == True):
+        LIST_REGIONS2 += titleid
+    else:
+        print(f"Invalid titleid: {titleid}")
+        sys.exit(2)
+
+file = open("eshopScrapper/output/main_regions_alt2.json", "r", encoding="UTF-8")
+DUMP = json.load(file)
+file.close()
+
+for titleid in DUMP:
+    if (titleid.startswith("0100") == True):
+        if (len(titleid["True"]) > 0): LIST_REGIONS += titleid
+    elif (titleid.startswith("0400") == True):
+        if (len(titleid["True"]) > 0): LIST2_REGIONS += titleid
+    else:
+        print(f"Invalid titleid: {titleid}")
+        sys.exit(3)
 
 print("                        ")
 print("Dumping...")
@@ -290,4 +352,3 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
-
