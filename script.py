@@ -294,7 +294,7 @@ for titleid in DUMP:
     if (titleid.startswith("0100") == True):
         LIST_REGIONS += titleid
     elif (titleid.startswith("0400") == True):
-        LIST_REGIONS2 += titleid
+        LIST2_REGIONS += titleid
     else:
         print(f"Invalid titleid: {titleid}")
         sys.exit(2)
@@ -352,3 +352,4 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
