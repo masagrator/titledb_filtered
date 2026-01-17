@@ -25,7 +25,7 @@ jobs:
       - name: Set up Python 3
         uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
+          python-version: '3.14'
 
       # 3. Install the newest Git client
       - name: Install newest Git
@@ -38,6 +38,7 @@ jobs:
       - name: Clone TitleDB
         run: |
           git clone --depth 1 https://github.com/blawar/titledb.git
+          git clone --depth 1 https://github.com/dev-chin/eshopScrapper.git
 
       # 5. Run your Python script
       - name: Run Python script
