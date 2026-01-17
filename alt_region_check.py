@@ -23,14 +23,14 @@ def checkTitleid(titleid: str):
         else: 
             print(f"✗ {region} {titleid}: {status_code}")
             OUTPUT[f"{titleid}"]["False"].append(region)
-
-try:
-    with open(f"{folder}/main_regions_alt.json", "r", encoding="UTF-8") as f:
-        OUTPUT = json.load(f)
-except:
-    OUTPUT = {}
     
 for folder in FOLDERS:
+    try:
+        with open(f"{folder}/main_regions_alt.json", "r", encoding="UTF-8") as f:
+            OUTPUT = json.load(f)
+    except:
+        OUTPUT = {}
+    
     with open(f"{folder}/main_regions.json", "r", encoding="UTF-8") as f:
         main_titleids = list(json.load(f).keys())
     
@@ -52,4 +52,3 @@ for folder in FOLDERS:
         
     with open(f"{folder}/main_regions_alt.json", "w", encoding="UTF-8") as f:
         json.dump(OUTPUT, f, indent="\t")
-
