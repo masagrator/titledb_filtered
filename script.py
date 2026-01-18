@@ -302,10 +302,10 @@ keys = list(DUMP.keys())
 
 for i in range(len(DUMP)):
     if (keys[i].startswith("0100") == True):
-        if (keys[i] not in LIST_REGIONS): LIST_REGIONS[keys[i]] = DUMP[keys[i]]
+        if (keys[i] not in LIST_REGIONS.keys()): LIST_REGIONS[keys[i]] = DUMP[keys[i]]
         else: LIST_REGIONS[keys[i]] += [x for x in DUMP[keys[i]] if x not in LIST_REGIONS[keys[i]]]
     elif (keys[i].startswith("0400") == True):
-        if (keys[i] not in LIST2_REGIONS): LIST2_REGIONS[keys[i]] = DUMP[keys[i]]
+        if (keys[i] not in LIST2_REGIONS.keys()): LIST2_REGIONS[keys[i]] = DUMP[keys[i]]
         else: LIST2_REGIONS[keys[i]] += [x for x in DUMP[keys[i]] if x not in LIST2_REGIONS[keys[i]]]
     else:
         print(f"Invalid titleid: {titleid}")
@@ -366,5 +366,6 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
 
 
