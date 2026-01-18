@@ -73,6 +73,22 @@ files = [
     "ZA.en"
 ]
 
+REGIONS = ["MY", "SG", "TH", "TW"]
+
+def checkTitleid(titleid: str, region: str):
+    url = f"https://ec.nintendo.com/apps/{titleid}/{region}"
+    with requests.head(url, stream=True, allow_redirects=False) as response:
+        status_code = response.status_code
+        if (status_code == 303):
+            print(f"✓ {region} {titleid}")
+            return True
+        elif (status_code == 403):
+            print("✗ Hit rate limit. Aborting...")
+            sys.exit(1)
+        else: 
+            print(f"✗ {region} {titleid}: {status_code}")
+            return False
+
 shutil.rmtree("output/titleid", ignore_errors=True)
 shutil.rmtree("output2/titleid", ignore_errors=True)
 os.makedirs("output/titleid")
@@ -161,6 +177,63 @@ new_file = open("output2/nsuIDs.json", "w", encoding="UTF-8")
 json.dump(NS2UIDs, new_file, ensure_ascii=False)
 new_file.close()
 
+with open("output/main_regions_alt.json", "r", encoding="UTF-8") as f:
+    LIST_REGIONS_ALT = json.load(f)
+
+with open("output2/main_regions_alt.json", "r", encoding="UTF-8") as f:
+    LIST2_REGIONS_ALT = json.load(f)
+
+titleids = list(LIST_REGIONS.keys())
+for i in range(LIST_REGIONS):
+    titleid = titleids[i]
+    if (titleid in LIST_REGIONS_ALT.keys()):
+        for region in REGIONS:
+            if (region in LIST_REGIONS_ALT[titleid]["True"]):
+                LIST_REGIONS[titleid] += region
+            elif (region in LIST_REGIONS_ALT[titleid]["False"]):
+                pass
+            else:
+                if checkTitleid(titleid, region) == True:
+                    LIST_REGIONS[titleid] += region
+                    LIST_REGIONS_ALT[titleid]["True"] += region
+                else: LIST_REGIONS_ALT[titleid]["False"] += region
+    else: 
+        LIST_REGION_ALT[titleid] = {"True": [], "False": []}
+        for region in REGIONS:
+            if checkTitleid(titleid, region) == True:
+                LIST_REGIONS[titleid] += region
+                LIST_REGIONS_ALT[titleid]["True"] += region
+            else: LIST_REGIONS_ALT[titleid]["False"] += region
+            
+
+titleids = list(LIST2_REGIONS.keys())
+for i in range(LIST2_REGIONS):
+    titleid = titleids[i]
+    if (titleid in LIST2_REGIONS_ALT.keys()):
+        for region in REGIONS:
+            if (region in LIST2_REGIONS_ALT[titleid]["True"]):
+                LIST2_REGIONS[titleid] += region
+            elif (region in LIST2_REGIONS_ALT[titleid]["False"]):
+                pass
+            else:
+                if checkTitleid(titleid, region) == True:
+                    LIST2_REGIONS[titleid] += region
+                    LIST2_REGIONS_ALT[titleid]["True"] += region
+                else: LIST2_REGIONS_ALT[titleid]["False"] += region
+    else: 
+        LIST2_REGION_ALT[titleid] = {"True": [], "False": []}
+        for region in REGIONS:
+            if checkTitleid(titleid, region) == True:
+                LIST2_REGIONS[titleid] += region
+                LIST2_REGIONS_ALT[titleid]["True"] += region
+            else: LIST2_REGIONS_ALT[titleid]["False"] += region
+
+with open("output/main_regions_alt.json", "w", encoding="UTF-8") as f:
+    json.dump(LIST_REGIONS_ALT, f, indent="\t")
+
+with open("output2/main_regions_alt.json", "w", encoding="UTF-8") as f:
+    json.dump(LIST2_REGIONS_ALT, f, indent="\t")
+    
 """
 # Scrap Japanese eshop
 print("Scrapping Japanese eshop...")
@@ -339,22 +412,6 @@ new_file.close()
 with lzma.open("output2/main.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2, ensure_ascii=False).encode("UTF-8"))
 
-with open("output/main_regions_alt.json", "r", encoding="UTF-8") as f:
-    TH_TITLEIDS = json.load(f)
-
-for titleid in LIST_REGIONS:
-    try:
-        LIST_REGIONS[titleid] += TH_TITLEIDS[titleid]["True"]
-    except: print(f"{titleid} not found in main_regions_alt!")
-
-with open("output2/main_regions_alt.json", "r", encoding="UTF-8") as f:
-    TH_TITLEIDS = json.load(f)
-
-for titleid in LIST2_REGIONS:
-    try:
-        LIST2_REGIONS[titleid] += TH_TITLEIDS[titleid]["True"]
-    except: print(f"{titleid} not found in main_regions_alt!")
-    
 new_file = open("output/main_regions.json", "w", encoding="UTF-8")
 json.dump(LIST_REGIONS, new_file, ensure_ascii=False)
 new_file.close()
@@ -366,6 +423,3 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
-
-
-
