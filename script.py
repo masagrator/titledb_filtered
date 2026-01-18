@@ -189,21 +189,21 @@ for i in range(len(titleids)):
     if (titleid in LIST_REGIONS_ALT.keys()):
         for region in REGIONS:
             if (region in LIST_REGIONS_ALT[titleid]["True"]):
-                LIST_REGIONS[titleid] += region
+                LIST_REGIONS[titleid].append(region)
             elif (region in LIST_REGIONS_ALT[titleid]["False"]):
                 pass
             else:
                 if checkTitleid(titleid, region) == True:
-                    LIST_REGIONS[titleid] += region
-                    LIST_REGIONS_ALT[titleid]["True"] += region
-                else: LIST_REGIONS_ALT[titleid]["False"] += region
+                    LIST_REGIONS[titleid].append(region)
+                    LIST_REGIONS_ALT[titleid]["True"].append(region)
+                else: LIST_REGIONS_ALT[titleid]["False"].append(region)
     else: 
         LIST_REGION_ALT[titleid] = {"True": [], "False": []}
         for region in REGIONS:
             if checkTitleid(titleid, region) == True:
-                LIST_REGIONS[titleid] += region
-                LIST_REGIONS_ALT[titleid]["True"] += region
-            else: LIST_REGIONS_ALT[titleid]["False"] += region
+                LIST_REGIONS[titleid].append(region)
+                LIST_REGIONS_ALT[titleid]["True"].append(region)
+            else: LIST_REGIONS_ALT[titleid]["False"].append(region)
             
 
 titleids = list(LIST2_REGIONS.keys())
@@ -212,21 +212,21 @@ for i in range(len(titleids)):
     if (titleid in LIST2_REGIONS_ALT.keys()):
         for region in REGIONS:
             if (region in LIST2_REGIONS_ALT[titleid]["True"]):
-                LIST2_REGIONS[titleid] += region
+                LIST2_REGIONS[titleid].append(region)
             elif (region in LIST2_REGIONS_ALT[titleid]["False"]):
                 pass
             else:
                 if checkTitleid(titleid, region) == True:
-                    LIST2_REGIONS[titleid] += region
-                    LIST2_REGIONS_ALT[titleid]["True"] += region
-                else: LIST2_REGIONS_ALT[titleid]["False"] += region
+                    LIST2_REGIONS[titleid].append(region)
+                    LIST2_REGIONS_ALT[titleid]["True"].append(region)
+                else: LIST2_REGIONS_ALT[titleid]["False"].append(region)
     else: 
         LIST2_REGION_ALT[titleid] = {"True": [], "False": []}
         for region in REGIONS:
             if checkTitleid(titleid, region) == True:
-                LIST2_REGIONS[titleid] += region
-                LIST2_REGIONS_ALT[titleid]["True"] += region
-            else: LIST2_REGIONS_ALT[titleid]["False"] += region
+                LIST2_REGIONS[titleid].append(region)
+                LIST2_REGIONS_ALT[titleid]["True"].append(region)
+            else: LIST2_REGIONS_ALT[titleid]["False"].append(region)
 
 with open("output/main_regions_alt.json", "w", encoding="UTF-8") as f:
     json.dump(LIST_REGIONS_ALT, f, indent="\t")
@@ -423,5 +423,6 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
 
 
