@@ -207,7 +207,7 @@ for i in range(len(titleids)):
             
 
 titleids = list(LIST2_REGIONS.keys())
-for i in range(LIST2_REGIONS):
+for i in range(len(titleids)):
     titleid = titleids[i]
     if (titleid in LIST2_REGIONS_ALT.keys()):
         for region in REGIONS:
@@ -423,4 +423,5 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
 
