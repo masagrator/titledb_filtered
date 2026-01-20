@@ -1,15 +1,15 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000111892/427777b051333d73146f6016139a8b62da34ed86dbf4ce76328127ef4134794f.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/1a5bdccd318b4260a2030e1cd015e517_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/d58dcee27d46626068a70a31ec29d607805ace03a4d477a69d1242a3640898e7.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/7b71ff8d94e928143b78914a5becfc40f1a75101e1e11ec6dc4afdcd08c9170e.jpg",
 	"publisher": "eastasiasoft",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000111892/5e042ce66639a77ade81c340752ac28eea19b813c186f72197eb19e5d0e416b6.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000111892/f921caae5bf51cd0a75fae636ae36024c4eb2a1513ca18364994eb362eea1afe.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000111892/964b8eeb7b17e5021603bac026be736773b54144d02338fa14adf2b8f9fd860a.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000111892/a63498cf8aba5aab336edb375f2e12c2ad635f8e870866e69cd1a2e72fbc020f.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000111892/9280584b74c46b2e67a25522a42f42c76cf1042f2f2ad4892989c7d5824404e0.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000111892/9337ef8d1c5b09638f5547fd5f27f370fe6300f6ee79e4bf58877e3dd426796d.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/5e042ce66639a77ade81c340752ac28eea19b813c186f72197eb19e5d0e416b6.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/f921caae5bf51cd0a75fae636ae36024c4eb2a1513ca18364994eb362eea1afe.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/964b8eeb7b17e5021603bac026be736773b54144d02338fa14adf2b8f9fd860a.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/a63498cf8aba5aab336edb375f2e12c2ad635f8e870866e69cd1a2e72fbc020f.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/9280584b74c46b2e67a25522a42f42c76cf1042f2f2ad4892989c7d5824404e0.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/9337ef8d1c5b09638f5547fd5f27f370fe6300f6ee79e4bf58877e3dd426796d.jpg"
 	],
-	"releaseDate": 20260114,
+	"releaseDate": 20260115,
 	"size": "338 MiB"
 }

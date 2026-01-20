@@ -1,14 +1,14 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000115508/183caf8a9f9f2e688be4172d44029408b0804a698006f6e3391c65b25e086300.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/dc1aa9c426be4fe38940e67ad86d469c_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/183caf8a9f9f2e688be4172d44029408b0804a698006f6e3391c65b25e086300.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/825bf4856c7f1267c4b1d486ef1b6f84ec704bb1f6681391f3bb9cc322a93684.jpg",
 	"publisher": "Aldora Games",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000115508/92ea79ab74375f9a32323df15797415f89f3ef446a884873c23468205aef81e6.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000115508/9ebcb98be4f7bf3dbc4b682a91d51d51f67dd7731df68f04305453a5420f7221.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000115508/3efeb9d868b5591ea2650994719b7dc1caa98a6ddb8b8cd340d3e0cf22e377d2.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000115508/b3ef81f3740f33b2d4a6eb906d51d064ff11ff468717528b0529118901b8ca84.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000115508/d8251beeeacb5565d0dfbe184e5e79ca44b2506b6685a2184489f7f329b95ea3.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000115508/f575075b4d3a4a0c2683ccb839f9ca50226dff204afa0305832cacedfd4f903d.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/92ea79ab74375f9a32323df15797415f89f3ef446a884873c23468205aef81e6.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/9ebcb98be4f7bf3dbc4b682a91d51d51f67dd7731df68f04305453a5420f7221.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/3efeb9d868b5591ea2650994719b7dc1caa98a6ddb8b8cd340d3e0cf22e377d2.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/b3ef81f3740f33b2d4a6eb906d51d064ff11ff468717528b0529118901b8ca84.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/d8251beeeacb5565d0dfbe184e5e79ca44b2506b6685a2184489f7f329b95ea3.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/f575075b4d3a4a0c2683ccb839f9ca50226dff204afa0305832cacedfd4f903d.jpg"
 	],
 	"releaseDate": 20260115,
 	"size": "267 MiB"

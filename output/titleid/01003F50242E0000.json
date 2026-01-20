@@ -1,15 +1,14 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000100425/20c0c110f9f9e77f5b1784a4f9f370327ae31b944f690720b17704f6ff8f36e4.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/83b9bce5c940458a93256a8305b44124_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/cac8b6942f61c7f2b05dfd54a564dacf711c3505758e3b068e3869faa2b68ca2.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/d794d5d5062bfdb3ce0284b13d143ab8f344ccbb531f3294b9529a94004fd4cb.jpg",
 	"publisher": "EpiXR Games",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000100425/9db629f04872ec5de05a0cddbcde1a8e39381ea6d9791fcbbeed252c3d25a38d.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000100425/171a088a5f6ab50df00788331a9ca33f0378436df53971addfc5af85725c1620.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000100425/7423406fb65477d24eb77e4700ebf143ce200c234f544c941458a83ed49c0c0d.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000100425/d9ab961ca20ff47c993289511be4f1923d86be58d6e7a25a7ebe5ba6ec78f2a3.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000100425/3c4afa89da6d85cf992b9cdce604f243ce091cd8748b8fd7223cc0d59f1fdba1.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000100425/ea72c0f6cd13e2ffc133137f19985af74f387be5dc408c0ff5ed5b90c8836828.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/9db629f04872ec5de05a0cddbcde1a8e39381ea6d9791fcbbeed252c3d25a38d.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/7dc0731e410a9653583266e9f755767550bc3f37398a390fee77d1842ab21124.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/df0f4f88824cfc4bf2d7af9e93024bee0277377d9885b06a97982be8ceef88b7.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/d9ab961ca20ff47c993289511be4f1923d86be58d6e7a25a7ebe5ba6ec78f2a3.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/0d3c598ab2df64c87ae064dd9c7662f5275e58aa3cba1ea6cc473f93d8bf9b2c.jpg"
 	],
-	"releaseDate": 20260108,
+	"releaseDate": 20260115,
 	"size": "689 MiB"
 }

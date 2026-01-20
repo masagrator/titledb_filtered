@@ -1,14 +1,15 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000094992/7e120016c339e5d86efa094e4cda4403228042e932b8abfcfa14716cd6d3e0b8.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/79393cdc52ff4d02ae8507d881678d08_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/7e120016c339e5d86efa094e4cda4403228042e932b8abfcfa14716cd6d3e0b8.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/aa5ae5aa7995e963fa90e5c88a26018dbda7fd540d78b2dd864c923e58740bd4.jpg",
 	"publisher": "tinyBuild Games",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000094992/7873eb9f99015337c37a941d712415a361d06d7a6498b027d655f969c5c13cd2.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000094992/350e5df57bb175d26f328b3904cc4c5b407d72dd245dce70fbe33d1b766917ac.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000094992/71b3d74954616be98e0440d0b1f6dad755c1c94a5a75dae383c33e3026760df3.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000094992/2f6e3163a14c5f147e128ff66c28a5bd6650c7e71477cf4a221c9220e626ea3c.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000094992/b2778ab3971edb8bd10e19e1d2df8a3de79178dd1d7cdf5e7f8b867d0b260a70.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/7873eb9f99015337c37a941d712415a361d06d7a6498b027d655f969c5c13cd2.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/b2778ab3971edb8bd10e19e1d2df8a3de79178dd1d7cdf5e7f8b867d0b260a70.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/e4de345ed61be5ef1736df6cecc6254c305904089e3ceed45bd6174bbf1a1bdf.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/92afc96c59c2586a7a02a56b903fb6c7593eb9f02989a15636fde67f8de64fc7.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/350e5df57bb175d26f328b3904cc4c5b407d72dd245dce70fbe33d1b766917ac.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/71b3d74954616be98e0440d0b1f6dad755c1c94a5a75dae383c33e3026760df3.jpg"
 	],
-	"releaseDate": 20260108,
+	"releaseDate": 20260109,
 	"size": "744 MiB"
 }

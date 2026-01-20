@@ -1,14 +1,13 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000113946/941a5b2e42bf431fa40ab8c86ff4a12c5ef2bdd46c12efd7f1c95d3a8aa18038.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/c5e64fe47d2c4f80ab3569b50075fdb2_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/563572220366ccef0654b269d0b469e5e81a6bd5979bd98f4e93a8d04724c0bc.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/e7186c8ce4d473f115350cb1c12d6248c579d28ec86e2cbfd64a3f12054f7515.jpg",
 	"publisher": "EP Games",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000113946/88070c6f4030a780261cd1f70b363353c5dedd223f0e9c4721ecb8de28dc3ecc.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000113946/08cd8f85bea4ac25d33a5f477717e4d92c8fe9d7ba85c58286943cc4a40352f3.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000113946/42dec5399db213fad76e51a16ee59b8b099ef922e5d7310f6656e3468a24e75c.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000113946/5f2444a4add7aecb307f40826c15e917109cca1e7804a978c1aa85469819a5ea.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000113946/58fdce7d4223a0793e6b7fce57afd3aa1f1be20d239160424ce3a6edf23c7c36.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/dd92dcb1fb7f73e6ce8426175e5f3aeb7874ecbd650bb14f15440fc4eddb35a2.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/71ec6a221b1f0c2a7eaded60d5fd6dbeb4b6c0624353ec883d12889cf1b5a69c.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/cab275938284b76a24ab401b539e3303bfdb46199d2c473a842c337776fd10ce.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/e8051b3bb4d436b8a8bd9da1d05d65136b90ba578267e7997df445733e4be928.jpg"
 	],
-	"releaseDate": 20260105,
+	"releaseDate": 20251225,
 	"size": "246 MiB"
 }

@@ -1,13 +1,13 @@
 {
-	"bannerUrl": "https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwb188d4bf/products/D70010000116761/heroBanner/15f68366585f83b4a9553f2de0013ed8b17ec7ea57a2ff1ed9dc5d0ef78671a5.jpg",
-	"iconUrl": "https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwb3af7089/products/D70010000116761/squareHeroBanner/05b353a98b7bf0e0da72ed54b2477a2d0816ef2a94be13c183ddf5e0bfbe1e88.jpg",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/15f68366585f83b4a9553f2de0013ed8b17ec7ea57a2ff1ed9dc5d0ef78671a5.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/05b353a98b7bf0e0da72ed54b2477a2d0816ef2a94be13c183ddf5e0bfbe1e88.jpg",
 	"publisher": "TT",
 	"screenshots": [
-		"https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw73ce0a2b/products/D70010000116761/screenShot/715db295c9e70e90e295b16caecd33bcfe4330ef7a2c96e3e3ebcd5b6402d6fa.jpg",
-		"https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwcadbeedc/products/D70010000116761/screenShot/3bccf2bce7ef1201c459f5150ad3cac70192404a158069d49274be1ac9cec5e9.jpg",
-		"https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw1471f7ea/products/D70010000116761/screenShot/c46da0a33da56ff2d7a1916f92a4d176c9682110b6e277cd5534004ae7835757.jpg",
-		"https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw2bdce30e/products/D70010000116761/screenShot/506c774fc37005e423f5018d333e7ec66815011789c7c172caf0318d1807a413.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/715db295c9e70e90e295b16caecd33bcfe4330ef7a2c96e3e3ebcd5b6402d6fa.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/3bccf2bce7ef1201c459f5150ad3cac70192404a158069d49274be1ac9cec5e9.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/c46da0a33da56ff2d7a1916f92a4d176c9682110b6e277cd5534004ae7835757.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/506c774fc37005e423f5018d333e7ec66815011789c7c172caf0318d1807a413.jpg"
 	],
-	"releaseDate": 0,
-	"size": "Unknown"
+	"releaseDate": 20260122,
+	"size": "148 MiB"
 }

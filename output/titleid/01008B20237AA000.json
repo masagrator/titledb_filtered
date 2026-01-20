@@ -1,12 +1,12 @@
 {
-	"bannerUrl": "https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw71379742/products/D70010000097694/heroBanner/13b31f0d830e0695a18c77388821bf7266cc72d4aabe49ab69b2a342965cf32a.jpg",
-	"iconUrl": "https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwaf1203ae/products/D70010000097694/squareHeroBanner/d355dbac0b8c3ea47d44facc5795076dd0449d1460e8ea269fd3cdf54e124cbb.jpg",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/13b31f0d830e0695a18c77388821bf7266cc72d4aabe49ab69b2a342965cf32a.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/d355dbac0b8c3ea47d44facc5795076dd0449d1460e8ea269fd3cdf54e124cbb.jpg",
 	"publisher": "\u30e1\u30d3\u30a6\u30b9",
 	"screenshots": [
-		"https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw086975a7/products/D70010000097694/screenShot/c31413f0aede19b6b216d983b0758c8797096e4097b180cbcdb76ca8982be429.jpg",
-		"https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dw26902250/products/D70010000097694/screenShot/066916e199ded43b58baef301a0acabf28c94dee94866063fb53048c631a3fd3.jpg",
-		"https://store-jp.nintendo.com/dw/image/v2/BFGJ_PRD/on/demandware.static/-/Sites-all-master-catalog/ja_JP/dwacfdff46/products/D70010000097694/screenShot/c5e45cc68ec7afab3592d4e442ec67fe7ed610cd576d4209b967cf38f474a6c4.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/c31413f0aede19b6b216d983b0758c8797096e4097b180cbcdb76ca8982be429.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/066916e199ded43b58baef301a0acabf28c94dee94866063fb53048c631a3fd3.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/c5e45cc68ec7afab3592d4e442ec67fe7ed610cd576d4209b967cf38f474a6c4.jpg"
 	],
-	"releaseDate": 0,
-	"size": "Unknown"
+	"releaseDate": 20251213,
+	"size": "44 MiB"
 }

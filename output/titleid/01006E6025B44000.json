@@ -1,13 +1,13 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000108166/b9a0f92cf288c9c0e4b39d2c37f4edd9f18212f3ce7c929676b87a8538b9f3fb.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/877b7ae7fcc44e1f88370beb82e5c306_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/b9a0f92cf288c9c0e4b39d2c37f4edd9f18212f3ce7c929676b87a8538b9f3fb.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/bfe34770f5cffd35b006fd52a57e84dc968afc78ba681d364c74b08ee4b28ca4.jpg",
 	"publisher": "Daedalic Entertainment",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000108166/dc9dee10a29a5cfc4d5887a2d32fbf70003dc5be05f1b86023aa84b24803f3e3.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000108166/6c2a3eafe7bd413eb4b4e64083326659e7877dd6ac8201c900be3f5288148ada.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000108166/1801fe72ad5ff5ffdf50226283c5968f4e81cb88de06b944dd96a26ec1d46fc8.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000108166/eb7e16e540c4134d9c665185c9bc20784db1829c533f259e68abe16ab38f154f.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000108166/13f16c829bdbb41435e4866b00046775552328dbc8bf77c3285c101be165b64e.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/dc9dee10a29a5cfc4d5887a2d32fbf70003dc5be05f1b86023aa84b24803f3e3.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/6c2a3eafe7bd413eb4b4e64083326659e7877dd6ac8201c900be3f5288148ada.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/1801fe72ad5ff5ffdf50226283c5968f4e81cb88de06b944dd96a26ec1d46fc8.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/eb7e16e540c4134d9c665185c9bc20784db1829c533f259e68abe16ab38f154f.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/13f16c829bdbb41435e4866b00046775552328dbc8bf77c3285c101be165b64e.jpg"
 	],
 	"releaseDate": 20260121,
 	"size": "367 MiB"

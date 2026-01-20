@@ -1,12 +1,12 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000115820/ebdaef1cb011c3cb84e0a1f4bb0229d0c43f7b07bf6bdaab0bdebbeb085be0fa.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/731a5b01f7384b7f9d75e48b5d50dc65_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/ebdaef1cb011c3cb84e0a1f4bb0229d0c43f7b07bf6bdaab0bdebbeb085be0fa.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/aa9221fb8768123501d1eed2d84f743b67970d4c0f54439fc150efab36af8e50.jpg",
 	"publisher": "Eathrabaria",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000115820/594331609e160a70f804503e51bc9203951353bfc02f44210b404cb9399facb2.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000115820/e9557049cc6c019862545eb094542351cc1887bcf24667f6a9cbe71ca9c8f657.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000115820/76bfb7dc42bb7183b490a3b29f0d6f8b3a409fbdd9c11342096ebe4f8d88b55a.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/594331609e160a70f804503e51bc9203951353bfc02f44210b404cb9399facb2.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/e9557049cc6c019862545eb094542351cc1887bcf24667f6a9cbe71ca9c8f657.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/76bfb7dc42bb7183b490a3b29f0d6f8b3a409fbdd9c11342096ebe4f8d88b55a.jpg"
 	],
-	"releaseDate": 20260113,
+	"releaseDate": 20260115,
 	"size": "56 MiB"
 }

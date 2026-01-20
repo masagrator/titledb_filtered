@@ -1,15 +1,15 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000105126/ac09ce7abff8ceb0c1a7e042e853a8e9a751ee302a94c85327b77b8cf4fa45f5.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/774d363205a140d5b5c89bd4f451e1c0_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/ac09ce7abff8ceb0c1a7e042e853a8e9a751ee302a94c85327b77b8cf4fa45f5.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/4ed74995097ab69cdddd70c86bc66beb9729471d4ebe89860bdd53a12e5b898b.jpg",
 	"publisher": "FURYU Corporation",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000105126/a88fcae1ecea2c0bbc3cd099f9d3c5f8a13e4532a0e6e1445c8da50db66b1170.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000105126/9fbf64ebc8984924a71ca06b59133d45d2d77226feea649b80bcefcd672c209d.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000105126/9277dc94a18c40c03821ee95f065b91ad5f9f4a82a66c581a323602c8652c956.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000105126/a7891f9b0ff5015edeaa13f7bd3ebc317ca8adf6081d32924be0eb46faf8bde8.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000105126/6d0fbcdc51ed1f46994ea517fe41d4fd6f0e16ff6f9f6656741bd2985a0eea52.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000105126/1cbb41bb739d174aa33727112aa451cbb41e39e4521ba03d435c4ed2c487e2be.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/a88fcae1ecea2c0bbc3cd099f9d3c5f8a13e4532a0e6e1445c8da50db66b1170.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/9fbf64ebc8984924a71ca06b59133d45d2d77226feea649b80bcefcd672c209d.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/9277dc94a18c40c03821ee95f065b91ad5f9f4a82a66c581a323602c8652c956.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/a7891f9b0ff5015edeaa13f7bd3ebc317ca8adf6081d32924be0eb46faf8bde8.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/6d0fbcdc51ed1f46994ea517fe41d4fd6f0e16ff6f9f6656741bd2985a0eea52.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/1cbb41bb739d174aa33727112aa451cbb41e39e4521ba03d435c4ed2c487e2be.jpg"
 	],
 	"releaseDate": 20251210,
-	"size": "3.89 GiB"
+	"size": "3.88 GiB"
 }

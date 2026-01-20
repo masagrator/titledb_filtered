@@ -1,12 +1,12 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000113113/d11ea641635cfc01f87ca33879bb18e6f355712f4b8a4d2b8aa7a98065c121d1.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/38a07e36e4404997a811e77490767fcd_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/d11ea641635cfc01f87ca33879bb18e6f355712f4b8a4d2b8aa7a98065c121d1.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/17aa6299b658f41ff63f535620735d30b6a05009c23afa3e62c9ffb60e59b134.jpg",
 	"publisher": "TT",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000113113/d923ec55b7263e4abc65587c13c137c58100f0264c223bda8b7563bc6de07c98.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000113113/33e1ebcdd637edc78f9337b6c9207595bd23d162516477cbb9bc2ddc573bcc4f.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000113113/72541caf9c29a8c5452702b923d37d2025fb0a6bf7e2f3886ebaefd553e653d2.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000113113/83a904b43dfa6d3939eeabc0941c82be4862a54005cd3d7e23b251bcda81f0a8.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/d923ec55b7263e4abc65587c13c137c58100f0264c223bda8b7563bc6de07c98.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/33e1ebcdd637edc78f9337b6c9207595bd23d162516477cbb9bc2ddc573bcc4f.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/72541caf9c29a8c5452702b923d37d2025fb0a6bf7e2f3886ebaefd553e653d2.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/83a904b43dfa6d3939eeabc0941c82be4862a54005cd3d7e23b251bcda81f0a8.jpg"
 	],
 	"releaseDate": 20260115,
 	"size": "141 MiB"
