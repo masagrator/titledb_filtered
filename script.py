@@ -198,7 +198,7 @@ for i in range(len(titleids)):
                     LIST_REGIONS_ALT[titleid]["True"].append(region)
                 else: LIST_REGIONS_ALT[titleid]["False"].append(region)
     else: 
-        LIST_REGION_ALT[titleid] = {"True": [], "False": []}
+        LIST_REGIONS_ALT[titleid] = {"True": [], "False": []}
         for region in REGIONS:
             if checkTitleid(titleid, region) == True:
                 LIST_REGIONS[titleid].append(region)
@@ -423,6 +423,7 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
+
 
 
 
