@@ -1,11 +1,11 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000111145/f73e91c460e7d393ab64808422c5f136a3f7b8ce3132a9ce689726e5ccb29372.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/3fd99e22937d48cfb0f704d784ab6844_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/f73e91c460e7d393ab64808422c5f136a3f7b8ce3132a9ce689726e5ccb29372.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/4a7946fc508dde455666e23bc838fff2d322af87a491276a0f6754b709b63e09.jpg",
 	"publisher": "17Studio",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000111145/3fa3ac8cbbdaccd1bb3d142ebb40d9972d10afb3aeedaf9743b84e8e3a34ed34.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000111145/bb4ddad13fd6d8fb202ec02a33a42564c82c33435cfe67bcf6e79c86d219b5a2.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000111145/3e8be4778606a8544119012aa821c4eaa9caaafe6f479aa074b4fecb1ea4fc42.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/3fa3ac8cbbdaccd1bb3d142ebb40d9972d10afb3aeedaf9743b84e8e3a34ed34.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/bb4ddad13fd6d8fb202ec02a33a42564c82c33435cfe67bcf6e79c86d219b5a2.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/3e8be4778606a8544119012aa821c4eaa9caaafe6f479aa074b4fecb1ea4fc42.jpg"
 	],
 	"releaseDate": 20251218,
 	"size": "206 MiB"

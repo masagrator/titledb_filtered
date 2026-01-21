@@ -1,15 +1,15 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/390eb70169ff63b286869a66d9d25e80b20fb75901bb57fe37e953dd34d32563.jpg",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/1407f4fa5f1fdaf47104cae22a8781605c8a8fb1e2336aed812f95d1dcd217e7.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/56ef2cf3904c137e16d22896281e5cebd67dc3218ecf49f6af9b9366158a2a78.jpg",
-	"publisher": "\u30b1\u30e0\u30b3",
+	"publisher": "KEMCO",
 	"screenshots": [
-		"https://img-eshop.cdn.nintendo.net/i/51d445edb0910efc31ad7a03ecfae21034c65c1f1b037510b8d6873e27fdf986.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/16991d3ce82c0635a09a7225a07546e1c13e900a12da3c23c0bafb4dadcf327f.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/2fadf0366668341b759957f16ce56f6d123b4cdf712d2f1da96ca3534113870a.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/66b149e28cc97da1bd17b3c32dadc5af625cc346256f3e3e3cce39b41c7ea25d.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/38d186f6ab391f62178d2189e8dd37419435e11e3c017fc1c500c9a85703bbf0.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/4cd969b7f7882f99beadcde364f7dc55da1a9af517d1f18ae4c196c0fd76a919.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/1d0f3d79778cfaf219c664bf2e1431dc39eeb853608b52e27a7433451859d1e4.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/0edb100305cff4ca7eb7862eff0644b3719d11e273ec436512067fa02da53465.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/9da5bcf952745d6f04d6db171a0bbf06cf1c55dba154c300d2f62301f904424d.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/95e56218ceb6bb1f1134f540e7ab479056953e1378d6e9b3715b9a58064ee966.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/c73215976d0e5715eccb4a0bf3c7927498cbfc5608072eef40f9d7ecda995d1b.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/26d131573fa7ba6653240f5a7195c411795716b4ea2a56defb2712ab15667dad.jpg"
 	],
-	"releaseDate": 20260109,
+	"releaseDate": 20260108,
 	"size": "505 MiB"
 }

@@ -1,12 +1,12 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000112546/25bbe280506e51ccc40e1bc4c17d42dfc9d5f319d7719fa8cbb46b11c32e348f.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/5f8f89d698c34f8ebffd7717d8fea224_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/25bbe280506e51ccc40e1bc4c17d42dfc9d5f319d7719fa8cbb46b11c32e348f.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/ca494ac777a06248e56543e1ec577b193b393fc1e3c193e46e9bb4566b3542aa.jpg",
 	"publisher": "HERO GAME",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000112546/b15af557f8220c62f1336c9ad628464119488dd99d40041c4c8c815ffd98d8bc.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000112546/9cb65a70b56c0466b91970e0a8070e8f71a4a9aee064191e5c6ee66ed1f11f0d.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000112546/361353bae80210cbe1ed2a7d9ed513f3e470084d3ce0603dbb57a617d9ea9bb7.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000112546/d5a682aada8d6a1021a666953cfeaf1e55e02f8de510f31c468429d9cf7b46f7.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/b15af557f8220c62f1336c9ad628464119488dd99d40041c4c8c815ffd98d8bc.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/9cb65a70b56c0466b91970e0a8070e8f71a4a9aee064191e5c6ee66ed1f11f0d.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/361353bae80210cbe1ed2a7d9ed513f3e470084d3ce0603dbb57a617d9ea9bb7.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/d5a682aada8d6a1021a666953cfeaf1e55e02f8de510f31c468429d9cf7b46f7.jpg"
 	],
 	"releaseDate": 20260112,
 	"size": "122 MiB"

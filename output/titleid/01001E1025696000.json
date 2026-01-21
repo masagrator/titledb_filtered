@@ -2,7 +2,14 @@
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/bdd16910f54600beb45dc1898ebbb0458fec8228d017f220427859e922f295dc.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/2e9da769abe9d592e45927cf77b521c3251cef7e3533d0b3b0f34c3ceffb0998.jpg",
 	"publisher": "U&I Entertainment",
-	"screenshots": null,
+	"screenshots": [
+		"https://img-eshop.cdn.nintendo.net/i/975d240bbb750e3dcbac4202ff4223c0f4ac9167b740472fd2c6002ce489a620.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/77707e0b1627c15b0f4f81e0cc26e493e24f59828b37eb30a9d3e57fd89ec2e0.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/42bd66dc7da5c76ec68875a963188d9d2ec15411bd6a6677b423e572aec9a055.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/61414ea044062a3171445b1910dbb1fb383cec96b1229480008a758aa6d1ba06.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/f68305c8ee564991f60758f01b7572d177268b3af9652489e2ac3ed3f3358054.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/db59e87ca4ef3f7b07c2dcf1f4bd3c6309f8dd3f96706c541a6911826369eeab.jpg"
+	],
 	"releaseDate": 20260320,
 	"size": "9.97 GiB"
 }
