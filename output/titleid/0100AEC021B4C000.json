@@ -1,15 +1,15 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/d363da4b197b10e48d333ce0ac8b547d340127b19875278d175fab73360b1c07.jpg",
-	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/639ff6c513ff5892708b08581ddb2de3973bfc9f3b885d7c85a156fecda21fb1.jpg",
-	"publisher": "\u30c7\u30a3\u30fc\u30b9\u30ea\u30fc\u30fb\u30d1\u30d6\u30ea\u30c3\u30b7\u30e3\u30fc",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/466f6e566a5e3dd4ddec833632464a5e609a93c450e30d6e5b3bf660b63a47b6.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/4ab03c896c6daf85a05ec859baa7eda348151516fc68cde75dc1f93c056d5634.jpg",
+	"publisher": "D3PUBLISHER",
 	"screenshots": [
-		"https://img-eshop.cdn.nintendo.net/i/f3acdb902130ec926e807cea24cbe3eadbdd24bde4eefa38d4743c3737193fda.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/b18709648bdcb8d1bf78c7e1a756d037f68cbd627fa29b757af05dc707a42e38.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/c1c37f4e0ca7be96d58d688f18d7e0111628cf8031762b2de82f938ca1a01021.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/e84c3de6a9ccad26f5b5524a3428b188b23b1209397cbd0c0159e88376806b1a.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/935b9aa94c095b996703604c20892bae7c3ff9eda9da3778a9b1afbecc3fea4a.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/04101e923c9c874b3081516d7a3bc07d23271a811958f54ce14cb353c8d52c1e.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/5925d0c265a6843f21cd5196c2d742eb2a5b762b827efa6c444d6676afeaf31d.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/3386e273a6c4f44d1b2d5c51fbb4179a7b49c91730389d31077522ffb15fb787.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/ac81f5980b1f1e6eba65590ce8d21c3ef88ff8c38c31134843f9b6daaa80c864.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/7494dc269e9856e401f2bffa381756c9d0dcb3abb9f04b23fae9dbe99b3ade07.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/16b8ba6848629bc35b1cf08c4d1d1e52f899b9c46417fda7c3704103015943ab.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/947d4d758e61baa5cc3338059aa3ba558a86c87239aa0b57f037e679791a4784.jpg"
 	],
-	"releaseDate": 20251204,
+	"releaseDate": 20260129,
 	"size": "2.16 GiB"
 }
