@@ -1,14 +1,15 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/d6090dcd576469a1724b4259ce3c91478d65963d8dbe2060b9153a127eb3b66c.jpg",
-	"iconUrl": "",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/868029f9ae9ecd9e90f07782dc6cc2f18a9ae2829e86cec7353e835a7eafd181.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/dd0fc7a57f00909eaa27df3e2699bb59ff95e9f2d6adaa7450cf91f548094ecb.jpg",
 	"publisher": "Fun Games Studio",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/49d3a54a510adebda37c6ae8b35bf682bf490414bffea207e1aba22ca4b7722f.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/8c58b98c8aebea7fc114e6f88a16d6f5a660771e542a373bdef7e8783413754a.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/16df7946fb0937ac4258f1b847a23bd77f2fff88b46ca2ffcccdc8c030475909.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/fd9fb81696fc9c4a0b819c316e9d0643d78eba2769a6d467412d46b1d0b85f5c.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/60e65ccb5f8328f5ee64c1287be2f5ef68feab8d856b9a045b5cd7ddbf07ad57.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/60e65ccb5f8328f5ee64c1287be2f5ef68feab8d856b9a045b5cd7ddbf07ad57.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/9f20f3d41f2fc18219ee6a27b0bdc60d89861e4a129d9ff87b657c5db3c31a4a.jpg"
 	],
-	"releaseDate": 20260221,
+	"releaseDate": 20260220,
 	"size": "190 MiB"
 }
