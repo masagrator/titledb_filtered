@@ -1,7 +1,7 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/f1c1f0fec1991c940e9c3c4ed79d8907ed1c1f0a3e3ca83a97c72b35464da46b.jpg",
-	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/9312194ff144eb2e023b77340adcf378a9bc767534b61180f5843da7743f272a.jpg",
-	"publisher": "\u30b8\u30fc\u30fb\u30e2\u30fc\u30c9",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/0486f254f5ccdbb91999ab566731da9f2681dfd734c4625153f2c986c18feb77.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/c3a8a7911518d2b0a3160f9a1197d550228fcd0463567b5071b638843fd76b11.jpg",
+	"publisher": "G-MODE",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/0c5482d071dec6f38b570b9b06ed20fce45ef5f72835e053f88960fa96de3ecb.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/ed7ad59d943b02a53820af74c4fb04d6d67c53cbde872eb2bd822a60adf3c190.jpg",
@@ -10,6 +10,6 @@
 		"https://img-eshop.cdn.nintendo.net/i/38aad8c972a51d769930417247b09662d1410c7bbf08ff5f23e207df3165823e.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/8e824f6d4d864feb9365c5379585c8f055dcb5585a1f13dbfdda3d84987f78b5.jpg"
 	],
-	"releaseDate": 20260304,
+	"releaseDate": 20260305,
 	"size": "287 MiB"
 }
