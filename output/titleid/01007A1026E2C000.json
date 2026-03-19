@@ -1,12 +1,14 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/61893ade60bdcccbe7757c8fbe113ec27e2803de4f2578d55cb5d6d3bff0bce9.jpg",
-	"iconUrl": "",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/6c08f5885d035b5afa328633adf6869690d9f7f755ff1d765a2124e8dd9cd233.jpg",
 	"publisher": "Cr3 Studio",
 	"screenshots": [
+		"https://img-eshop.cdn.nintendo.net/i/9a66d24063d2e495ea0b91ea0a5507bade66e833047c26cd0d7dd7e5c65f7203.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/cff166008b5302b90ceb76854c0497eecc68fdb67da6b20e8a9dfcd908a271da.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/408b82101b08c2207001d66cc294dd732d3bff35f434d28cdbbb77e3c38ffb21.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/75acea3159ee8a43f91d4ceabcf5acd35d195a5f63c8216b29b61337ab7df25c.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/52504f3a6b2b78559dc835b02cce00990af9c65105f5b0c59f5b2d4c2ffa4cf2.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/52504f3a6b2b78559dc835b02cce00990af9c65105f5b0c59f5b2d4c2ffa4cf2.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/8fd1b45d9b513b3bcd2efb089a0bd9f48e7bebbfda4ba8d61e7da52d8564cbca.jpg"
 	],
 	"releaseDate": 20260319,
 	"size": "229 MiB"
