@@ -1,13 +1,14 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/0010f9126091faf500d79f913fb65c4d1e79e6140148d530f8ff3a9f0f91d691.jpg",
-	"iconUrl": "",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/20a04847ed9b08b31f20828eb8009895c4c5143dc9f01f796f4b8e5d5dd33e0f.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/3d5224cdf2ae56c596f2bcd1681100a6b31ccf038799fbe5c02dd312fd42f160.jpg",
 	"publisher": "Kairosoft",
 	"screenshots": [
-		"https://img-eshop.cdn.nintendo.net/i/a3e1f867df0caeebd7ded73195ef9e71ec6305c853f86fa52a615442cd9990fb.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/91386efc061e34b029391ed67a5301ff2f3d5cefdd8e693592d79e794e376f13.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/f95707864361583c74314ed8f89b4beedcdf539d960e4e6f951c20a19cbb19f9.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/b1e5d737215d5a04b63627e388785d4172f7632acaf9666c3cd90370cea4aa97.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/cb756e7c42e3f159798a2a987ac94d71e9676a0c106a33f3dbd927cc089992d0.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/68be552dc01bdecad107940a0c5fce07e5f84932c27117675ed1c0b11972ac54.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/c85a933eab61041531b00a669477c54b64b5b3415be848fdaf259ddf5b7e6090.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/7cae1495675a1efacf6ea6fea4a57114cb6bfa212589d1b58adfd78e85015837.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/f7d0feaf29fccda00f887d1666ec5af18e15d6ee168c9b99038d007cc5e4cbb5.jpg"
 	],
-	"releaseDate": 20260409,
+	"releaseDate": 20260408,
 	"size": "256 MiB"
 }
