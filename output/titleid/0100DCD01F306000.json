@@ -1,15 +1,15 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000081412/b186e28375b0df189a31a73794d1fea822ee19a30db6ab7d88e7c0a24fef4926.jpg",
-	"iconUrl": "",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/b186e28375b0df189a31a73794d1fea822ee19a30db6ab7d88e7c0a24fef4926.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/84b7427ac0abbce4e9fa3f58459040d7ec56ede593e2585f4869333a7e59b01d.jpg",
 	"publisher": "Yacht Club Games",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000081412/201ba4f6ecb0d96d082480059cbf73e56b07ee4435902ebeea7a6398dd35222e.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000081412/b0cd10f13e712cf367edbf97423756c6d6d62d9122241f18d9511c10d48ac79f.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000081412/1327bba7fef5b23fded12744cf7c0f733bf17b971b243d30aead70b60becb3db.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000081412/66c70d2e694c93d7aca3361af8bee703f68e17fe36dc26fca8473dbbff7bc7f3.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000081412/8bc895d4de9fd8783f7c4d1b950e435f921a9b65f22d87bd743add8613446714.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000081412/bdd84f251f30f9bbc80505a34b746f794272261b4bde3d2cd6ddfcc1b929e1fc.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/201ba4f6ecb0d96d082480059cbf73e56b07ee4435902ebeea7a6398dd35222e.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/b0cd10f13e712cf367edbf97423756c6d6d62d9122241f18d9511c10d48ac79f.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/1327bba7fef5b23fded12744cf7c0f733bf17b971b243d30aead70b60becb3db.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/d6d3e1bd957447eb4f2d57a70ef984a3ea51a9fbc6415b17dec86cefcb8f3d9b.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/8bc895d4de9fd8783f7c4d1b950e435f921a9b65f22d87bd743add8613446714.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/121bc101a0b64280fab150940d45dab9bcbca0397f021c1ee0dac09fb3254563.jpg"
 	],
-	"releaseDate": 20301231,
-	"size": "Unknown"
+	"releaseDate": 20260529,
+	"size": "840 MiB"
 }

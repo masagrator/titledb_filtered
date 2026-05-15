@@ -1,8 +1,15 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000004519/f43ebd5cdac98ed79b9e15c399b87e2c0d354757906f90eb3bd02aa01edc01e8.jpg",
-	"iconUrl": "",
-	"publisher": "Nintendo",
-	"screenshots": [],
-	"releaseDate": 0,
-	"size": "Unknown"
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/690ff180025dcf275bf66879ee02963cb405a99371155ea1245afdc55ec31218.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/34c8782e3fbbb8c4ae2466487725069455f5e3c173d8b09c2db0fe03b634dead.jpg",
+	"publisher": "\u30dd\u30b1\u30e2\u30f3",
+	"screenshots": [
+		"https://img-eshop.cdn.nintendo.net/i/75512081aa185941fc651cdf5887a2af5a2590793070687b8c7461f9805a4534.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/022f62e20f16cffa36efa84ab61d1f5be1e7d920e9a1a58fda3a38eecb205f6e.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/c3b834260a9d9df04d5dd6949fa421a143d9e630a0293f3ccb2e5b6f7fa09cb6.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/aad521f2aae99e0db7ca465cfb41637976e64bdf61aa14f689efdc2c6b827a43.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/16a041395b20c26272eb531cea30245e34b0051b7aa8c910fa61b567cf726fc1.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/6d184fdb6e0c234fbc70c25b70d5b5b805abaea48488fa4de337ac220b5b4cfd.jpg"
+	],
+	"releaseDate": 20260408,
+	"size": "1.88 GiB"
 }

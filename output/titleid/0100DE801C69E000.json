@@ -1,10 +1,15 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/aa875244bedb5683c3b5273cb215dbfba6d70cd19281772eda0a2afcf3b4eff2.jpg",
-	"iconUrl": "",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/2241eeed15c1fde009ef77630f422a56f16b63139141abd34fd4cf756c08f302.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/09d1b1baf17bed0f5277fdc192f640fce5ca1afd9bf3d51d864db4ead18804a4.jpg",
 	"publisher": "Penguin Pop Games",
 	"screenshots": [
-		"https://img-eshop.cdn.nintendo.net/i/5f81353af283abeecc4fda31f244e197943f4cf3a1aedbdff9b4029ac4c1e259.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/dccbd7619ef4dbb87a5afb4543d427a42fd90b563e47d410c33488468b8f4bb8.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/34b834e706f02967bda4c20608b3c3d8c4f8b7ffa9f3c15df8acbc2ae6e62fbf.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/0e2510796accd53288a7b08ae2d0a7a60690f8cee2ab4edd1ec3c065070c34e8.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/7f76f312f4e789da6b828edf72c428cf82e50a470f79e69316574db4dae96a8e.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/a038141bfc4b4e0f1ecb1e85fe19b34f944e6a1f23c8cf2a39957f9ab3695fe1.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/79fe7540a4bff96867ad60b1917bb6da2ec138014273ad9c644cc033d1439587.jpg"
 	],
-	"releaseDate": 20260504,
+	"releaseDate": 20260507,
 	"size": "341 MiB"
 }
