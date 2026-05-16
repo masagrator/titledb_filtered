@@ -1,15 +1,14 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/18c5101cc4108adf4c12b6c10a17a1ada8bd016162089cf1626072e84281b0d0.jpg",
-	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/5117eb08cd9d7f36cd6f5d442dbf4e37a02325bd9299ae05eb0f7005f0b2ec01.jpg",
-	"publisher": "\u3057\u306b\u305b\u30b2\u30fc\u30e0\u30ba",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/b25cd0d449fda6428e486d4b47d5d264926f86f5f603b84b6c630a057edf0506.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/7469079cda9d2b7de996407b3a19ea1b53cf33f795eec65270256fb66d43ede9.jpg",
+	"publisher": "SHINISE GAMES",
 	"screenshots": [
-		"https://img-eshop.cdn.nintendo.net/i/1c6001f39d6482bd1173e5bcac5d6c4b8cb7ab414113f336dcc5939283706f0a.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/58b0335f933b4185230a62ddc8e93c41fc54f25eb29b8c08b37f76a1eead3e4c.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/9498a0fadf40662619807dffb28ea0d5f4b755ad3727c5a2bce9e290e52101a6.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/862e3fbc17b870350f74d477aa1b306225d1a40449fb2c724dc9caef65bbe0de.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/49e103fbe7d12deb7b041d0668bbbf3df9ee20f8630d891dca63991d45c69442.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/cbffd3e97651b99a2fcceb38577f2989516bfc3829b4b94e78be9d8f3889783a.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/551df37943d541f1f1bc8988e3ed553c3c57fa3255915cb54c58e9731438b6f0.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/1084ec3040bc27cf79abb4f13a985c1f111cda29a3485e2a3f691d6b054d98ea.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/2221db778b6ec9ae8a385e2101be27e5c8daa97fb1413686524885c87e795b7e.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/2ab16b7e90bbdc3782ab8942ab2d5f1b55deea9ec9c2f55d5d40c98f319d0e2a.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/56507241667c2be777f92e28cc9931869f29867e26d80cf0a05f02eca2f1fa1a.jpg"
 	],
-	"releaseDate": 20260409,
+	"releaseDate": 20260423,
 	"size": "1.07 GiB"
 }
