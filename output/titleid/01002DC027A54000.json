@@ -1,12 +1,13 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/6e8e26a0b531bec5fc0235273c4212d81a7ace12c3b0c7516826decd856811a3.jpg",
-	"iconUrl": "",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/eee48ad63a60e5f0150364f1f80c899ea142c549390566be7a0dc5847ca54345.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/adcdae51501aa5ba8fdafa165d902ab36a73874100180b2bfb8f7de38498aed1.jpg",
 	"publisher": "Gotcha Gotcha Games",
 	"screenshots": [
+		"https://img-eshop.cdn.nintendo.net/i/d943b3bde974444f2b80d505d12fc09e4ef4fb08f1170f41f3ed9cc8b6827bcd.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/4ee9f769a9fcbfbe266d41387a62662d2ab735ad2eacad4d09e9573fb8e757e0.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/7357f0225c665455b5577bbba8138b54bbdc94e7ecfc3012a94e2bac0219bdb7.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/83fc1de69f4d3784959b772e648932ef092c64bd91161aefd923db2685e1cb24.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/7e5c098a97aa604ba6ddda2dae3d7304b2920e0a63528b00895a7adc08becb52.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/4ee9f769a9fcbfbe266d41387a62662d2ab735ad2eacad4d09e9573fb8e757e0.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/7e5c098a97aa604ba6ddda2dae3d7304b2920e0a63528b00895a7adc08becb52.jpg"
 	],
 	"releaseDate": 20260521,
 	"size": "220 MiB"
