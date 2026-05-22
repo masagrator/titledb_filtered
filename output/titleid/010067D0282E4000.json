@@ -1,13 +1,12 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/bc7a22a927eabc581280acb3114cc58f69a07f244e33ed7fc63dd76ca57a697a.jpg",
-	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/7b2c3c2ac3829ea848eb0bffe8dec9ad943044af9d43c216523d550a91ca4cc6.jpg",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/563f11923de7ccbe88d2de7e8537c02ec6f6bd82df02bf563a1de87a1d024111.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/ca6c5f73511b73aae1df18cee75609121a69acccb7446ef5914527ed2d4992f3.jpg",
 	"publisher": "MASK",
 	"screenshots": [
-		"https://img-eshop.cdn.nintendo.net/i/53af8cb307dfe5bb2bdd8b98eaee2786e14b0673950b45db59e701a9f1834bdb.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/1b2f8d7088e84f8b6090d26ea6ba6e7b125879777fbe92a8eb8268129c46c3ad.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/000d3b9ff1d1a62d702958f0c1055a6da6e77ce3a916ef535d9f0ff86554282d.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/88be47725ef5662b47378aa9919fa58cb74011c06c3dd0251e41ae6ce934ad64.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/3e59f587c98b22fe9b9b8593448c91ee99e810b2aa0c8fcfb1d211dc4b0315d0.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/946374170bbb60ab00645fba195d12017687186c09327b04c3fd57cfd6c17b90.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/5fc81df1543ae775642dd71342c49a28dd3c8a2d73af30a271ba984c50dd0b50.jpg"
 	],
-	"releaseDate": 20260521,
+	"releaseDate": 20260528,
 	"size": "309 MiB"
 }
