@@ -1,14 +1,13 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/8f371150d74e21f7cebc1c23a0db8014608e5cd4def003f2a6207859613ced15.jpg",
-	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/0994f94294de9289cb5429c5af7c68ab757c044cff7492ef9bf575d131345a43.jpg",
-	"publisher": "\u306f\u3053\u8ff7\u8def\u5de5\u623f",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/492a81c876f743ebbe347b9382e4f9cb4c4c3419af6f9c101fdc8e7e37301268.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/e5d31f507cda321d7c0fc1bd6115a995d54509642b575d2a29c2ee01a90a6600.jpg",
+	"publisher": "Hako Maze Workshop",
 	"screenshots": [
-		"https://img-eshop.cdn.nintendo.net/i/54c2e6c28f70a6d72506fd9b3c54bab2b46e084eaa988637ca2e5daa439cd471.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/650c83b03faa7d65cb25262af2bb3f918a2bc9b3fbeecb7b9099d26e2d8ea150.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/cf226c950fb1cc4331ee9235076f5872c0e3dcd5acf5b5291952848264b98a2b.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/269ea7ea0372d722f5a008c83e4c75792b53739712f99abe545c95430e8ac312.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/b541e0c15a6566a8957d1d1c1b6e0753fd9a9447ec3bbb4c372d40d5ceec5fe1.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/5193d927b5b346a118abc75ba2cafb0caa95d283341a2560d2795c6473adb57c.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/e14d303fc85f0d48b3953a5f5b72d554216a4c95ff247b05cf61c796ce20a461.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/b541e0c15a6566a8957d1d1c1b6e0753fd9a9447ec3bbb4c372d40d5ceec5fe1.jpg"
 	],
 	"releaseDate": 20260625,
 	"size": "225 MiB"
