@@ -1,14 +1,15 @@
 {
-	"bannerUrl": "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/pixelcrossstitchcolorbynumberseasonscollection/2x1_PixelCrossStitchColorByNumberSeasonsCollection.jpg",
-	"iconUrl": "https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/pixelcrossstitchcolorbynumberseasonscollection/1x1_PixelCrossStitchColorByNumberSeasonsCollection_image500w.jpg",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/9deeefc31ba6de070291804c4550d0affb50700812efdee21aafe21d99e1f316.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/e94eac602e7b57a247c66f5a9bd30093695b1ff2cedcecb606c511d2fec446f0.jpg",
 	"publisher": "Error300 Games",
 	"screenshots": [
-		"https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/pixelcrossstitchcolorbynumberseasonscollection/nswitchds_pixelcrossstitchcolorbynumberseasonscollection/PixelCrossStitchColorByNumberSeasonsCollection_01.jpg",
-		"https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/pixelcrossstitchcolorbynumberseasonscollection/nswitchds_pixelcrossstitchcolorbynumberseasonscollection/PixelCrossStitchColorByNumberSeasonsCollection_02.jpg",
-		"https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/pixelcrossstitchcolorbynumberseasonscollection/nswitchds_pixelcrossstitchcolorbynumberseasonscollection/PixelCrossStitchColorByNumberSeasonsCollection_03.jpg",
-		"https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/pixelcrossstitchcolorbynumberseasonscollection/nswitchds_pixelcrossstitchcolorbynumberseasonscollection/PixelCrossStitchColorByNumberSeasonsCollection_04.jpg",
-		"https://www.nintendo.com/eu/media/images/assets/nintendo_switch_games/pixelcrossstitchcolorbynumberseasonscollection/nswitchds_pixelcrossstitchcolorbynumberseasonscollection/PixelCrossStitchColorByNumberSeasonsCollection_05.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/547b79f4224fcfea301769eb83aedd4660da8bd30cc12ccf202e8cedb4baaa0d.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/4b942f012eb37a233bbb64567fb057433223303416774e0db063868ce0eba5f1.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/a78b8d7765f0e0f2f29807507c282cf5fab7ac3e394dc4b51f6ec311ad9c539b.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/8682048944d65a0bb42ca5a0d29cf89b9e742eda1c080c6921ec0890453013e6.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/2ac54696bae3d18f7a9da0ab08e4524d00ae741d6248f3ca56296c03306b4422.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/a603b213d441c2d0792c7f2d06bc6e13c0b2d2fa55c85ae386fbc8983c728cae.jpg"
 	],
 	"releaseDate": 20250523,
-	"size": "300 MiB"
+	"size": "267 MiB"
 }
