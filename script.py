@@ -75,6 +75,54 @@ files = [
 
 REGIONS = ["MY", "SG", "TH", "TW"]
 
+# titledb sometimes has entries with "id": null (mostly new/upcoming games).
+# eshopScrapper keeps raw eShop pages named by nsuId, so we can recover the titleid from them.
+SCRAP_CAT1 = ["JP"]
+SCRAP_CAT2 = ["HK", "AU", "NZ"]
+SCRAP_CAT3 = ["US", "AR", "BR", "CA", "CL", "CO", "MX", "PE"]
+
+def getTitleidFromScrap(nsuId, region: str):
+    if (nsuId == None):
+        return None
+    path = f"eshopScrapper/scrap/{region}/{nsuId}.json"
+    if (os.path.isfile(path) == False):
+        return None
+    try:
+        with open(path, "r", encoding="UTF-8") as f:
+            DUMP = json.load(f)
+        titleid = None
+        if (region in SCRAP_CAT1):
+            for query in DUMP["__PRELOADED_STATE__"]["__reactQuery"]["queries"]:
+                if ("/products/" in query["queryKey"]):
+                    titleid = query["state"]["data"]["c_applicationId"]
+                    break
+        elif (region in SCRAP_CAT2):
+            if (len(DUMP["applications"]) == 1):
+                titleid = DUMP["applications"][0]["id"]
+        elif (region in SCRAP_CAT3):
+            sku = DUMP["props"]["pageProps"]["analytics"]["product"]["sku"]
+            titleid = DUMP["props"]["pageProps"]["initialApolloState"]["Product:{\"sku\":\"%s\"}" % sku]["applicationId"]
+        if (titleid == None):
+            return None
+        titleid = titleid.upper()
+        if (len(titleid) != 16):
+            return None
+        int(titleid, base=16)
+        return titleid
+    except Exception as e:
+        print(f"✗ Couldn't get titleid from {path}: {e}")
+        return None
+
+def loadScrapperEntry(titleid: str):
+    path = f"eshopScrapper/output/titleid/{titleid}.json"
+    if (os.path.isfile(path) == False):
+        return None
+    try:
+        with open(path, "r", encoding="UTF-8") as f:
+            return json.load(f)
+    except:
+        return None
+
 def checkTitleid(titleid: str, region: str):
     url = f"https://ec.nintendo.com/apps/{titleid}/{region}"
     with requests.head(url, stream=True, allow_redirects=False) as response:
@@ -116,7 +164,10 @@ for x in range(len(files)):
         entry = DUMP[keys[i]]
         entry_id = DUMP[keys[i]]["id"]
         if (entry_id == None):
-            continue
+            entry_id = getTitleidFromScrap(entry["nsuId"], files[x][0:2])
+            if (entry_id == None):
+                continue
+            print(f"Recovered titleid {entry_id} for nsuId {entry['nsuId']} ({files[x]})")
         ending = int("0x" + entry_id[12:16], base=16)
         if (ending % 0x2000 != 0):
             continue
@@ -158,7 +209,15 @@ for x in range(len(files)):
         entry["publisher"] = DUMP[keys[i]]["publisher"]
         entry["screenshots"] = DUMP[keys[i]]["screenshots"]
         entry["releaseDate"] = DUMP[keys[i]]["releaseDate"]
-        if (DUMP[keys[i]]["size"] == 0):
+        # titledb data has priority, fields missing in titledb are filled from eshopScrapper
+        SCRAPPER_ENTRY = loadScrapperEntry(entry_id)
+        if (SCRAPPER_ENTRY != None):
+            for field in ["bannerUrl", "iconUrl", "publisher", "screenshots", "releaseDate"]:
+                if ((entry[field] == None) and (field in SCRAPPER_ENTRY.keys())):
+                    entry[field] = SCRAPPER_ENTRY[field]
+        if (entry["iconUrl"] == None): entry["iconUrl"] = ""
+        if (entry["screenshots"] == None): entry["screenshots"] = []
+        if (DUMP[keys[i]]["size"] in [0, None]):
             entry["size"] = "Unknown"
         elif (DUMP[keys[i]]["size"] < 1024*1024*1024):
             entry["size"] = "%.0f MiB" % (DUMP[keys[i]]["size"] / (1024*1024))
@@ -221,7 +280,7 @@ for i in range(len(titleids)):
                     LIST2_REGIONS_ALT[titleid]["True"].append(region)
                 else: LIST2_REGIONS_ALT[titleid]["False"].append(region)
     else: 
-        LIST2_REGION_ALT[titleid] = {"True": [], "False": []}
+        LIST2_REGIONS_ALT[titleid] = {"True": [], "False": []}
         for region in REGIONS:
             if checkTitleid(titleid, region) == True:
                 LIST2_REGIONS[titleid].append(region)
@@ -423,7 +482,3 @@ new_file.close()
 with lzma.open("output2/main_regions.json.xz", "w", format=lzma.FORMAT_XZ) as f:
     f.write(json.dumps(LIST2_REGIONS, ensure_ascii=False).encode("UTF-8"))
 print("Done.")
-
-
-
-
