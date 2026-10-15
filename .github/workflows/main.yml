@@ -35,9 +35,31 @@ jobs:
 
       # 4. Clone the titledb repository
       # This will always clone the latest version of the 'master' branch
+      # Uses whichever of blawar/titledb and borntohonk/titledb has the newer last commit
       - name: Clone TitleDB
         run: |
-          git clone --depth 1 https://github.com/blawar/titledb.git
+          # Clone only commit metadata first (no file contents), to compare dates cheaply
+          git clone --depth 1 --filter=blob:none --no-checkout https://github.com/blawar/titledb.git titledb_blawar
+          git clone --depth 1 --filter=blob:none --no-checkout https://github.com/borntohonk/titledb.git titledb_borntohonk
+
+          blawar_ts=$(git -C titledb_blawar log -1 --format=%ct)
+          borntohonk_ts=$(git -C titledb_borntohonk log -1 --format=%ct)
+          echo "blawar/titledb:     $(git -C titledb_blawar log -1 --format='%ci  %h  %s')"
+          echo "borntohonk/titledb: $(git -C titledb_borntohonk log -1 --format='%ci  %h  %s')"
+
+          if [ "$borntohonk_ts" -gt "$blawar_ts" ]; then
+            chosen=borntohonk
+          else
+            chosen=blawar
+          fi
+          echo "Using $chosen/titledb (newer)"
+          echo "### TitleDB source: \`$chosen/titledb\`" >> $GITHUB_STEP_SUMMARY
+
+          # Download file contents only for the chosen repo
+          mv "titledb_$chosen" titledb
+          git -C titledb checkout -q
+          rm -rf titledb_blawar titledb_borntohonk
+
           git clone --depth 1 https://github.com/dev-chin/eshopScrapper.git
 
       # 5. Run your Python script
