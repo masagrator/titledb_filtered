@@ -1,7 +1,7 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/b8eca3de6e7418b227b82b529e77ec7653ee3d162cb5300c8ecfd4a62f9f8325.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/dcf68a1347cad51e10c992e5a26a50e0db909bb3bba352bb815717bcb07c44bb.jpg",
-	"publisher": "Catness Game",
+	"publisher": "Making Port",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/52b02c42738607c1492b52641aa08bb3963c4811746657c3fbd35ecb68bdd340.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/e1da765eda6214047e18829677c71a0ed00046b3cd41c6cc99bf430b499f8533.jpg",
@@ -11,5 +11,5 @@
 		"https://img-eshop.cdn.nintendo.net/i/dd505a3110a9a30284b85a2fe34e48e539212a8bdf2a18111236db13216b489e.jpg"
 	],
 	"releaseDate": 20200207,
-	"size": "380 MiB"
+	"size": "379 MiB"
 }

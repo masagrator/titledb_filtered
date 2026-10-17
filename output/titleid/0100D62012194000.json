@@ -1,7 +1,7 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/8368a010e73eec74ea9916dbcbc05b51b2c3c7fa91e7c94828f5f52768fae2d5.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/819c779dcbc5e12e158fe858a8a75f282dd3e5a8960af340796637666b342622.jpg",
-	"publisher": "\u30b3\u30fc\u30e9\u30b9\u30fb\u30ef\u30fc\u30eb\u30c9\u30ef\u30a4\u30c9",
+	"publisher": "Headup Games",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/c1a156ab4419e5ff68b7f62509dade4cc4649df83104611f25a7f51ceafcd474.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/b9cd7e64cdb55c161870efa06b5b5837356ef462fdc8adcc58dd3bede0980c32.jpg",
@@ -11,5 +11,5 @@
 		"https://img-eshop.cdn.nintendo.net/i/280ee120444b6056c2f1f21ae25dfbf9fd15c05cacb22ee041041a38cb8bd311.jpg"
 	],
 	"releaseDate": 20200820,
-	"size": "542 MiB"
+	"size": "541 MiB"
 }

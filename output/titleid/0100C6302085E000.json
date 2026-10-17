@@ -1,14 +1,15 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/58455b422901b4d39f31ae54b73f77028090697f58946f11c270301fa2ca4c7c.jpg",
-	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/96ccc1f5956f4da9d4898d3fef2edef63f55bd1247acc446a42f1a72f04fd411.jpg",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/37287420f7c58630a3aa3846cced1969c73207efa9cc17e01329a83e3badbe36.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/afb34fd81d2db24c80d68150115d48fc697d9b7e853b5ec11d5510b998022ec5.jpg",
 	"publisher": "syn Sophia",
 	"screenshots": [
-		"https://img-eshop.cdn.nintendo.net/i/7fbd336c3f9fd3b65f8fda25c0f1ac57a81dc8df61e8ba8e6d848d68f1409e33.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/48a2c1ad9041cabe778829bf31e3b7bca04c3cce3b1b15e421ea1eda2391595e.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/39eda0de66f07b1b0bf96de08f3d056f7ac716c8735d1c61b6ce20439fad0264.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/4df2991aab8f6246c0c3f1f716c792f00e4468dff8ae8ef5d64745521dea0f84.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/527e1b4aef3df74c4ea021c8eb65ce11a2ba9c263404fcdf394e7cdf1bf7fd89.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/c47c289e149064cff7f3604e224053b0d81fe1cd3f239a9d71e9dea5944a9f5a.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/43f2f12776c57243964e86472d80d13e3a659d7be3c6ed892e056b7bef0d1374.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/2d0ddd632a6551ee9821a57db978a0801dc9fdbccbf345f9f52339abaed68711.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/b17a73dd1e39dd300802ba5603408855c80986b12b179710af248d739d9103e3.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/2b8cb064305e2a2fef2314cb234f9fca47577e42f5e351485a6d743f98cf55b2.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/79c9f84568bac6bd815d93dcb17e24015b222ec2ba6c6deff4bc581eca9b79ba.jpg"
 	],
 	"releaseDate": 20251120,
-	"size": "124 MiB"
+	"size": "244 MiB"
 }

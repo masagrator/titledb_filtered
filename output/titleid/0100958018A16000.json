@@ -1,7 +1,7 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/b8ecaa68438b596a1ee917073a31a64a2d141f831750059a612b1ad262753e89.jpg",
-	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/45572ebffb121726ba9e64a7475347933dcd216959e9929e7cde7cedddf1b755.jpg",
-	"publisher": "PublishMe",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/83b83a5c788868cff8c5a9a77601399e8bf9ef297220c894f5d6ceef639605ae.jpg",
+	"publisher": "SimulatorMaker Studio",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/69d4159884efb6a82d1e13f083e77c77af089733319977743845db8deb6c6341.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/4786580416a4f8b240cc1dd93103279909005ee8fae6ca57b458be85e6bdbb53.jpg",
@@ -11,5 +11,5 @@
 		"https://img-eshop.cdn.nintendo.net/i/bed4315acc3b8b68b974f370f7b32d6711a12bdf0302211f9c981fc8022b72b1.jpg"
 	],
 	"releaseDate": 20220804,
-	"size": "1.11 GiB"
+	"size": "1.80 GiB"
 }

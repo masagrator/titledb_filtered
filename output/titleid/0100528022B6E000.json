@@ -1,7 +1,7 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/4d63446611e47078fd9dc949164e9799e57b4b36d7b92aec60dc031b8dbbba09.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/08de1eb16c6a29fdd9dceb915879885147f38aecf3734d4941351f0a501f2ce2.jpg",
-	"publisher": "NEWBIX team",
+	"publisher": "bit ManiaX",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/3a1154875117f4118469625ec9a4211d99684c71065706c2d1cd1ce69a975e67.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/5133cafb93f200c77863abc25544e96ddb964180b3894b0168b3d9e90d9f0729.jpg",
@@ -11,5 +11,5 @@
 		"https://img-eshop.cdn.nintendo.net/i/4fca7280418085cf67755d63f87b2466786c6b3ae89a18c63f4788eaa01ef379.jpg"
 	],
 	"releaseDate": 20251101,
-	"size": "835 MiB"
+	"size": "1.25 GiB"
 }

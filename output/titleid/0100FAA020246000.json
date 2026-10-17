@@ -1,7 +1,7 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/9425172f0919466273c7bfa1b1b7b6df6b728268e72a1993998d0c14946383ea.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/0142e3a78bf32de87e5e7dd00913a841bd6f8d233b7c2fe60826c0e96b5680e8.jpg",
-	"publisher": "Digital Eclipse",
+	"publisher": "Atari",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/4fe597d4d67448391d105739e2e0be94f23cbac18670a82523de4850d23a8881.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/9695eec66c6c4cf07b2c47ed85a94c5fcf2bacdc0a8d51539a07f9d645fbb29b.jpg",
@@ -11,5 +11,5 @@
 		"https://img-eshop.cdn.nintendo.net/i/ca84ecc71eda1b84072e6962279695c70d8539bcdff82c5d7d43a6582be864a0.jpg"
 	],
 	"releaseDate": 20241112,
-	"size": "5.41 GiB"
+	"size": "5.42 GiB"
 }

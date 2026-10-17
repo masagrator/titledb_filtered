@@ -1,7 +1,7 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/636ac75ed7079affb8a842e2e2a0bd4b71898e402a7a78c8eb9517d661172175.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/66ef3891bbea5736dc52c144bb1ff6b107cdcf9b25541d4368f4ce23d6d226be.jpg",
-	"publisher": "Digerati",
+	"publisher": "JoyMasher",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/120c53a9829daba87d63f516f6a0bd5cfef2f1d5658268d3fbe2831b59ab8508.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/fd08bbe53ffafbe608fb899a41fd8d9d47e464526167be6c74b883b2093f4172.jpg",
@@ -11,5 +11,5 @@
 		"https://img-eshop.cdn.nintendo.net/i/ee76629fc437b0d63d9f569e4c19d3a18bfe0a16258496e5170e2285b5d2a6f7.jpg"
 	],
 	"releaseDate": 20191225,
-	"size": "116 MiB"
+	"size": "115 MiB"
 }

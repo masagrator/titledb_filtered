@@ -1,7 +1,7 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/2fd2253054a6d0a912ddd834a08888f5db6747198beccdff006b8ac664c02323.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/dbe55a3a5322ebef36d7e0d79da38760508999bce9088db35106fd4accf45fbc.jpg",
-	"publisher": "HandyGames",
+	"publisher": "THQ Nordic Mobile",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/76f20d964318e3b3f2de2ef01bc9159846bf6e292fe0a2e1cfe4ff91e6e8242c.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/0779a43868ba7157e1338e4eb47a420ba59783ca0ea2e2fdf395db803da29833.jpg",
@@ -11,5 +11,5 @@
 		"https://img-eshop.cdn.nintendo.net/i/8e873a95aa337348477c880c3ddd3449312c9733bfdfe83e1ee5b4d869a55696.jpg"
 	],
 	"releaseDate": 20211214,
-	"size": "1.08 GiB"
+	"size": "1.09 GiB"
 }

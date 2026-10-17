@@ -1,7 +1,7 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/f7852a9a7ddc3bd2b11e6af7a5c5606f45bb7f6b88fab3d34ddc453a83a8e69f.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/db9aa19c13eda9ff646a795aa479040f7465b746d1d904ef78c91cd802cc1efb.jpg",
-	"publisher": "\u30a8\u30f3\u30bf\u30fc\u30b0\u30e9\u30e0",
+	"publisher": "iMel",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/0a75b71d059773bcc1a4c49f957a0df0812f7ce54dc9909abc5eaecc81c143f6.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/c1e4074c4b2059f87bf3ca4a6267814cd3b71ddc4d1a8554aab3c5fc6ebe4278.jpg",
@@ -11,5 +11,5 @@
 		"https://img-eshop.cdn.nintendo.net/i/7f52f7dfc4a808dfa7d4539b1164fbd109b9ff329506ef197af76bd5cbf11f34.jpg"
 	],
 	"releaseDate": 20240425,
-	"size": "1.74 GiB"
+	"size": "1.76 GiB"
 }

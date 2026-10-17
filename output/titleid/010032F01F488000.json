@@ -1,7 +1,7 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/f253462b1fecd800467a5e1d9eb9e08dfe7ae0243eecbecd958a4006bd61c25b.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/c079f27a5c7c5c5a55494e6cc5999dde3876eb38401c555dea818d68a2a54cfc.jpg",
-	"publisher": "Grizzly Games",
+	"publisher": "Mythwright",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/c49f638198c3dd1178ca3521708e33a325315c4f889fddb2d7cd6b73309f2521.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/8e6a0c48b95d1d55fc42424e67510db0cf8ff427373463d5f4ede18b3f99adbe.jpg",
@@ -11,5 +11,5 @@
 		"https://img-eshop.cdn.nintendo.net/i/5075376f871dafe3089b36eb67b0e1469d2c624459c86405fc0b56c88af225c4.jpg"
 	],
 	"releaseDate": 20241011,
-	"size": "792 MiB"
+	"size": "1.10 GiB"
 }

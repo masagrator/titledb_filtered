@@ -1,13 +1,15 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/943ac82193671174ecae54dabc8c85897b561153d830d86ac288476d3a9d02e4.jpg",
-	"iconUrl": "",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/cfd361a860321569dca167d8376de7a236c7e5a2eb46be289f11efe4de6db49e.jpg",
 	"publisher": "Mojang",
 	"screenshots": [
-		"https://img-eshop.cdn.nintendo.net/i/aa286299fcf041b316dec46e42e1e1bdda17550a720abb959787b2195cd660f2.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/235f0b65d83dfdaed908092c669b125e73de8f3da1217fa355771107ba579860.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/b13b7b4a75678b4ef587f0e1b10e9f82e0e85bae553c3ae199dc325bd89cbd87.jpg",
-		"https://img-eshop.cdn.nintendo.net/i/bc4014fd13779e3ee4b409d83b0efa28b37ad6cd338b7e46b6ca167f00c1c321.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/7d317890bcbc675afbd0822e9ce1ad162f2f9d9c3dfc73707d9d5faedd3aa689.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/cff7f2f2bf73d8fae776208aef6ec94087fcfad50bc20dc32db57bacc7220d93.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/f816f41e8f311715f1448c46265a289eef1ad9fe810f1892ac199e3a188b6dba.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/92b5fdbe98a128942c979a200016f9e689c9235553a1ba8f4cb5a99c7b07927e.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/e8b899b5c22fb2790d6dd1aa94bdb0bc8e13eea9e436de99e8e058bd6c882b1a.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/4388f87184286c815b35394d2c2d4a7bd4027ea114a5db14e8ee24df6d67cdea.jpg"
 	],
 	"releaseDate": 20260929,
-	"size": "Unknown"
+	"size": "4.30 GiB"
 }

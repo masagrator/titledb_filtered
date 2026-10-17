@@ -2,7 +2,13 @@
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/3dd307780b2f3984ea0649af717d7cbfd319d56a3ea7d058d4e137cbcb198e9a.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/aa56fe107df21faccec7b7b3c3b4c8c02278b43501d46a7866994d6c6cabf3f9.jpg",
 	"publisher": "Red Fables",
-	"screenshots": [],
+	"screenshots": [
+		"https://img-eshop.cdn.nintendo.net/i/095e6539b27ec723729a3564f51474168688b807a53b6200176b1a6434c5cecf.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/d19bd0827142affa78efde384a7020ae013776d7c0e62363c83729f8108aafe0.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/a5dadb360afea28aa0c8dec9793533b4721e6bfcc3e5158d0b1e6a235e64b876.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/9fa3ad7acc6afb123b9ac6b4b4f06064f522ff9290ca70afdb5eb7b7beb35097.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/6f6bcba45af1cb3d7fd29867633dcba0a47e0a82a2f993d82b1e54046e3fca0d.jpg"
+	],
 	"releaseDate": 20220728,
 	"size": "199 MiB"
 }

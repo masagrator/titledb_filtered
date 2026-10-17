@@ -1,7 +1,7 @@
 {
-	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/50ce00dc82054ad158c5c08c9b138bd0c3200a0b87fab559b7298aaa09011c9b.jpg",
-	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/bb26ad38b920e80c18e22416d0c93a11aaab16bbd50be3725a1d66463db32f05.jpg",
-	"publisher": "\u30cf\u30e0\u30b9\u30bf\u30fc",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/75bfd8b4812146c99b8858f64632e1204dfcf9021077c90a9c542d6067accfb0.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/30e85305509e7ff90fcac6abc27665ae763ed9afbd8c9f3a50d61a78da174553.jpg",
+	"publisher": "HAMSTER",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/afea59d195e8876d2b287d6be6193d677ee127d8f34008d715bbce196883cfc1.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/c0153af154997b46d7e6d449230b417b2e2c72702fad5e9b714401cafd3fb731.jpg",
@@ -11,5 +11,5 @@
 		"https://img-eshop.cdn.nintendo.net/i/9d40ecf7f1366d7478204237bc90cdecb9f2f7c365ff94bc1c4355e2ec84f624.jpg"
 	],
 	"releaseDate": 20260702,
-	"size": "117 MiB"
+	"size": "118 MiB"
 }

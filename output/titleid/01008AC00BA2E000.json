@@ -1,7 +1,7 @@
 {
 	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/1f3f36089e0c5d3be54f0acb367a402ed4b2710dd5a7618c1ee795e0f172a153.jpg",
 	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/90f5c589d2e7829c0ae76d8fe1bb9ef44be673d402a4863214e9f605eda141ac.jpg",
-	"publisher": "\u30ec\u30a4\u30cb\u30fc\u30d5\u30ed\u30c3\u30b0",
+	"publisher": "Headup Games",
 	"screenshots": [
 		"https://img-eshop.cdn.nintendo.net/i/b0325a6eaf4dc33a1bd664b86c51a40459c4cd6a3e585bcf2bff2c017d7ffa3a.jpg",
 		"https://img-eshop.cdn.nintendo.net/i/797e3b00d645ee0fdc137f17bd38e05113e6408656a4e9ebd55fdda82fb240ee.jpg",
@@ -11,5 +11,5 @@
 		"https://img-eshop.cdn.nintendo.net/i/7bb22756d8b9e2d087334684e27793f09f52f5ec16d21f59779f44104df5ad74.jpg"
 	],
 	"releaseDate": 20180927,
-	"size": "427 MiB"
+	"size": "426 MiB"
 }

@@ -1,13 +1,14 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000112391/530c3c41d5635893b66c8ff7e63c4e4cecc3c5dda91d3a8bb5c64309abe5e7ce.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000112391/4155f75346f9c8d8096c04b97ef9a4fa5c96f15ea7d944123f9d9416d136adf0",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/530c3c41d5635893b66c8ff7e63c4e4cecc3c5dda91d3a8bb5c64309abe5e7ce.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/30c43ab1d89688701f438b5a63998cd68f1d59e9bd7497d3c55b2a54f1e7f46d.jpg",
 	"publisher": "Auroch Digital",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000112391/ef4d9da81e7e5e48ebf9420cb8ee449727bbf0afc542b32d3398bfe6dacd2306.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000112391/a29a1ed32fa165df6803839d18748210ae1a7af5c30e82c99e1b3c4473c3fb22.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000112391/f8831b2f9e81334b366bbccb9d418fc7a6d6e74fe3333545e7edbe04855affa2.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000112391/401b00aceccd24e8bb1ab130cc7fe486d999376768655559740487b29077ec71.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000112391/b2dfe606f8f0e98adf4999b2cde649001532c5c2d6d649818786a77ac07a8e41.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/fa1b80c340c793b270a2972b2c55a4311dd73a8c878ebbc5d149bba07d3cb33d.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/8b5e4c11d966767f5862d35316bfb0f7ae1a37dc2df34bebe38129b02082b92d.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/5f320b388f704d495c2f01a299f6b98223d6e46da99c7cfceaabfe9dfb3e0fcd.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/77d3f858775fe21e95d5ae638dee3e860c4f12600d72ca8cf57b9687e45aff8d.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/2a912b8ddf2bc85d0214c8852820f2ce19526194a792210b40e2b992f1e5131e.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/fcfb0cd548e83f34961f6bd982fedd26339f1658c8e80cb31ba7abadfe0a0113.jpg"
 	],
 	"releaseDate": 20261110,
 	"size": "489 MiB"
