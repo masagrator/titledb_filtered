@@ -1,12 +1,15 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000095055/e26252a99a4cc44fe13dd1953fe8f561f71b2f96ad36a7860a907d8387fd4766.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/f5f1ffe2013b414689257d5f3032fa7d_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/e26252a99a4cc44fe13dd1953fe8f561f71b2f96ad36a7860a907d8387fd4766.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/9b6e257e86cff6370c5b51bc6e08198d210693fe49f737104248e76870d1628e.jpg",
 	"publisher": "Plug In Digital",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000095055/8b910026a3e2a4bc4c66673e46fab079493fed3f9305f13834650c3ff6ccad20.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000095055/1b158f9ec54087c7adf51711d4c45a0c5524022450d321490eb584a92906ec2b.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000095055/2af860b1a35e6512278965504e2efac39419d2e86530e99371307a500e0ef333.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/72b1cb970827fc6459307fd283112391820f80547c734fa27b736552a28298dd.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/c905ddf6465da5d70707cdd3a21e8993ff990b313043c80cf13d90aff9fc64c1.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/98fd345a936c1fa1ecfd263adaf1193f73e6d7074e32fd58eac5f99b7f7af688.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/f1adab5f49ca74697f0017fe6cce476920dd1e867868b5406a70f04453e81c85.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/27aab5c4a1c182e151cb0c83835fbc372241a974586677a563a4e7cf95f11503.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/1d25e0d958dc5444db9b2d6dd11fd5ed886f44fdb4a56684ae7799a977982224.jpg"
 	],
 	"releaseDate": 20261105,
-	"size": "265 MiB"
+	"size": "323 MiB"
 }
