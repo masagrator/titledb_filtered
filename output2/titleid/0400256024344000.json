@@ -1,14 +1,14 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000100541/162d52f7210caf683ed047b6589ba7bdfd7eb246fb8ce4ccffbb366003fcacc6.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/e8353f6251f84d3fa4f2c518b3b81269_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/162d52f7210caf683ed047b6589ba7bdfd7eb246fb8ce4ccffbb366003fcacc6.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/62eaa2e37aa6b7ec42d6c004fbcca87a9f288a9e4723b63c1ef6a34ca2fe7776.jpg",
 	"publisher": "Nacon",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000100541/d4040c13a3fbd336462473110af6e9b94dd18e868a93a5b98ad4711468359192.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000100541/40bcc92c2e94bec129118990cf95866681dd54eb16cef62a03b37711677aac08.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000100541/dbea893fe714b5dbff1711ff8cf9e29f0118fb56026651de1a020b37dee878df.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000100541/d049f0000018089080cc81c947114ff66dc6248f19dc8f3436b6d5dabb8945a2.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000100541/cb017a2b23e49797e38936959afa807cb0b1d035b21c0c0ac40e96795b58400c.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/d4040c13a3fbd336462473110af6e9b94dd18e868a93a5b98ad4711468359192.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/40bcc92c2e94bec129118990cf95866681dd54eb16cef62a03b37711677aac08.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/dbea893fe714b5dbff1711ff8cf9e29f0118fb56026651de1a020b37dee878df.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/d049f0000018089080cc81c947114ff66dc6248f19dc8f3436b6d5dabb8945a2.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/cb017a2b23e49797e38936959afa807cb0b1d035b21c0c0ac40e96795b58400c.jpg"
 	],
 	"releaseDate": 20260219,
-	"size": "45.17 GiB"
+	"size": "Unknown"
 }

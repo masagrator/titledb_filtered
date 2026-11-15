@@ -1,15 +1,15 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch2/70010000118533/43ace53b0e2682a2b4721909acf468b79e66105dbc8ba0c856c92305b0cb819e.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/578ccada34bd4e538d9fc09492f17133_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/43ace53b0e2682a2b4721909acf468b79e66105dbc8ba0c856c92305b0cb819e.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/de9cfa506ec79c5c6625ec4eaf55f233320cec0dc2c7611c0accf1b3f080ea9b.jpg",
 	"publisher": "Seed Sparkle Lab",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000118533/49b4573e56c25fb392715d848db9f52b76212e90b9acc99691869ed2369532d9.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000118533/371234fcb101f76324baa801be3c6d6f72d0dac9990dd95419d28596dcde24ee.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000118533/b00d32441d5fe5b7e28b654e908fb249d47e54d511d07fc3d21d3fef0d0e5833.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000118533/1db6f95b63dd5e7fe50029e3dd942148972fd09f2852cdb0d1a13e4006f107d6.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000118533/2020fe120d38d695e8d08f3bb0d763792dd43928c74f432a7fcce6708bf706f4.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch2/70010000118533/9a2e1e92f79adc4549a22161d9c8a19eb475be607f2c8102de84ce857804c3de.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/49b4573e56c25fb392715d848db9f52b76212e90b9acc99691869ed2369532d9.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/371234fcb101f76324baa801be3c6d6f72d0dac9990dd95419d28596dcde24ee.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/b00d32441d5fe5b7e28b654e908fb249d47e54d511d07fc3d21d3fef0d0e5833.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/1db6f95b63dd5e7fe50029e3dd942148972fd09f2852cdb0d1a13e4006f107d6.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/2020fe120d38d695e8d08f3bb0d763792dd43928c74f432a7fcce6708bf706f4.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/9a2e1e92f79adc4549a22161d9c8a19eb475be607f2c8102de84ce857804c3de.jpg"
 	],
 	"releaseDate": 20260818,
-	"size": "10.02 GiB"
+	"size": "Unknown"
 }
