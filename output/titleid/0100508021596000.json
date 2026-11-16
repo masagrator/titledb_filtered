@@ -1,14 +1,14 @@
 {
-	"bannerUrl": "https://assets.nintendo.com/image/upload/q_auto/f_auto/store/software/switch/70010000090622/eaf6625599dc3de9a3ef9bf833651e158cb7f486c7854a471ffad8bb24a00520.jpg",
-	"iconUrl": "https://assets.nintendo.com/image/fetch/q_auto/f_auto/https://atum-img-lp1.cdn.nintendo.net/i/c/0be4ffa203ed41eea0d31708bc1da28d_1024",
+	"bannerUrl": "https://img-eshop.cdn.nintendo.net/i/eaf6625599dc3de9a3ef9bf833651e158cb7f486c7854a471ffad8bb24a00520.jpg",
+	"iconUrl": "https://img-eshop.cdn.nintendo.net/i/682dca3861f6ece333cd0a4c678f89cc9977be5af75e16dca670eba78370577d.jpg",
 	"publisher": "No More Robots",
 	"screenshots": [
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000090622/afb821988471c79d70ea5fb90df0f5bfc4132935a436606bbdc2c2ec5f7022a4.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000090622/347f2c2912cbf26686a25b25ddb4ec2a2cd2488e1bf9ba1c99969999e08afaf7.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000090622/7275868e535aa1c922813068ac85f49770783b4df5f7ff31abcd7cf5b9941910.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000090622/26cadf76273d37f07844f5fcc82d91181174b095cc092a1fa572ce50fe218d7c.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000090622/0dbf7be5636416191ec54b80c57e6e5f2c0522d58eb4cd21f075c890075d423d.jpg",
-		"https://assets.nintendo.com/image/upload/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000090622/f92cb0975d1f71ca90fbe8b8d2dc344a2b08020fa9ed41a8f074791b4f5bd460.jpg"
+		"https://img-eshop.cdn.nintendo.net/i/afb821988471c79d70ea5fb90df0f5bfc4132935a436606bbdc2c2ec5f7022a4.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/347f2c2912cbf26686a25b25ddb4ec2a2cd2488e1bf9ba1c99969999e08afaf7.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/7275868e535aa1c922813068ac85f49770783b4df5f7ff31abcd7cf5b9941910.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/26cadf76273d37f07844f5fcc82d91181174b095cc092a1fa572ce50fe218d7c.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/0dbf7be5636416191ec54b80c57e6e5f2c0522d58eb4cd21f075c890075d423d.jpg",
+		"https://img-eshop.cdn.nintendo.net/i/f92cb0975d1f71ca90fbe8b8d2dc344a2b08020fa9ed41a8f074791b4f5bd460.jpg"
 	],
 	"releaseDate": 20261125,
 	"size": "1.55 GiB"
