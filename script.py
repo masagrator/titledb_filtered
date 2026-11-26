@@ -371,11 +371,12 @@ for i in range(len(missing_games)):
     else:
         LIST[titleid] = [DUMP["name"]]
     entry = {}
-    entry["bannerUrl"] = DUMP["bannerUrl"]
-    entry["iconUrl"] = DUMP["iconUrl"]
-    entry["publisher"] = DUMP["publisher"]
-    entry["screenshots"] = DUMP["screenshots"]
-    entry["releaseDate"] = DUMP["releaseDate"]
+    # Fields can be missing (e.g. unreleased games with no screenshots yet), so don't require them
+    entry["bannerUrl"] = DUMP.get("bannerUrl") or ""
+    entry["iconUrl"] = DUMP.get("iconUrl") or ""
+    entry["publisher"] = DUMP.get("publisher") or ""
+    entry["screenshots"] = DUMP.get("screenshots") or []
+    entry["releaseDate"] = DUMP.get("releaseDate") or 0
     if (("size" not in DUMP.keys()) or (DUMP["size"] == 0) or (DUMP["size"] == None)):
         entry["size"] = "Unknown"
     else: entry["size"] = DUMP["size"]
@@ -408,11 +409,12 @@ for i in range(len(missing_games)):
         if isOunce: LIST2[titleid] = [DUMP["name"]]
         else: LIST[titleid] = [DUMP["name"]]
     entry = {}
-    entry["bannerUrl"] = DUMP["bannerUrl"]
-    entry["iconUrl"] = DUMP["iconUrl"]
-    entry["publisher"] = DUMP["publisher"]
-    entry["screenshots"] = DUMP["screenshots"]
-    entry["releaseDate"] = DUMP["releaseDate"]
+    # Fields can be missing (e.g. unreleased games with no screenshots yet), so don't require them
+    entry["bannerUrl"] = DUMP.get("bannerUrl") or ""
+    entry["iconUrl"] = DUMP.get("iconUrl") or ""
+    entry["publisher"] = DUMP.get("publisher") or ""
+    entry["screenshots"] = DUMP.get("screenshots") or []
+    entry["releaseDate"] = DUMP.get("releaseDate") or 0
     if (("size" not in DUMP.keys()) or (DUMP["size"] == 0) or (DUMP["size"] == None)):
         entry["size"] = "Unknown"
     else: entry["size"] = DUMP["size"]
